@@ -1,0 +1,126 @@
+<!-- We don't need a full layout in this file because this page will be parsed with Ajax.  -->
+<div class="page" data-name="product">
+    <div class="page-content">
+        <!-- Top Navbar -->
+        <nav class="navbarB">
+            <div class="mobile-nav">
+                <div class="container">
+                    <a class="tNavbar">Tradder</a>
+
+                    <button class="hamburger button no-ripple" onclick="hamburgerToggle();">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <div class="action" id="myAcc">
+                        <div class="profile" id="profile" onclick="menuToggle();">
+                            <img src="img/user.png">
+                        </div>
+                        <div class="menu-acc">
+                            <ul>
+                                <h3></h3>
+                                <a href="/nProduct/">
+                                    <li><img src="img/donation.png">Donar</li>
+                                </a>
+                                <a href="/profile/">
+                                    <li><img src="img/editing.png">Editar Perfil</li>
+                                </a>
+                                <a href="/ownerChats/">
+                                    <li><img src="img/chat.png">Mis chats</li>
+                                </a>
+                                <a id="signOut">
+                                    <li><img src="img/logout.png">Desconectar</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-mobile">
+                    <a href="/login/" id="login">Ingreso</a>
+                    <a href="/register/" id="signUp">Registro</a>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="navbarA">
+            <div class="container">
+                <a class="tNavbar">Tradder</a>
+                <div class="menu">
+                    <a href="/login/" id="login">Ingreso</a>
+                    <a href="/register/" id="signUp">Registro</a>
+                    <a href="/nProduct/" id="donar">Donar</a>
+                    <div class="action" id="myAcc">
+                        <div class="profile" id="profile" onclick="menuToggle();">
+                            <img src="img/user.png">
+                        </div>
+                        <div class="menu-acc">
+                            <ul>
+                                <h3></h3>
+                                <a href="/profile/">
+                                    <li><img src="img/editing.png">Editar Perfil</li>
+                                </a>
+                                <a href="/ownerChats/">
+                                    <li><img src="img/chat.png">Mis chats</li>
+                                </a>
+                                <a id="signOut">
+                                    <li><img src="img/logout.png">Desconectar</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="card-wrapper-product">
+            <div class="card-product">
+                <div class="product-imgs">
+                    <div class="img-display">
+                        <div class="img-showcase">
+                            <img src="">
+                        </div>
+                    </div>
+                </div>
+                <div class="product-content">
+                    <h2 class="product-title"></h2>
+                    <h2 class="name-donor">Donador: <span></span></h2>
+
+                    <div class="product-detail">
+                        <h2>Acerca de este producto:</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam sequi beatae, soluta eum sed
+                            ratione possimus ut quia fugit placeat quibusdam delectus inventore assumenda ducimus qui
+                            atque distinctio quas asperiores!</p>
+                        <ul>
+                            <li>Categoría: <span id="pCategory"></span></li>
+                        </ul>
+                    </div>
+
+                    <div class="obtaining-info">
+                        <button class="btn-product no-ripple" id="chat-product">
+                            Iniciar Chat <i class="far fa-comments"></i>
+                        </button>
+                        <button class="btn-product no-ripple" id="delete-product">
+                            Eliminar Producto <i class="fas fa-trash-alt"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <img src="img/logo_tradder.png" class="logo">
+            <div class="social-icons-container">
+                <a target="blank" class="link external" href="https://www.instagram.com/tradder_ar/">
+                    <img src="img/ICON_IG.png" class="social-icon">
+                </a>
+                <a target="blank" class="link external" href="https://twitter.com/Tradder_ar">
+                    <img src="img/ICON_TW.png" class="social-icon">
+                </a>
+                <a target="blank" class="link external" href="https://www.youtube.com/channel/UCdHJldwAnnBluGanbE1CQzw">
+                    <img src="img/ICON_YT.png" class="social-icon">
+                </a>
+            </div>
+            <span class="copyright">&copy;2021, Tradder. All rights reserved.</span>
+        </footer>
+    </div>

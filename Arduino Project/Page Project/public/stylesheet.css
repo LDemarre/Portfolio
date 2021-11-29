@@ -1,0 +1,1066 @@
+/* Estilos globales */
+.contenedorflex {
+  display: flex;
+}
+
+h1 {
+  text-align: center;
+  color: #057258;
+}
+
+.footer {
+  clear: both;
+  padding: 15px;
+  background: #343A40;
+  color: white;
+}
+
+.icon {
+  opacity: 0.6;
+}
+
+.icon:hover {
+  opacity: 0.9;
+}
+
+.textp {
+  background-color: rgba(233, 236, 239);
+  margin: 1% 2%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 50px;
+  color: #057258;
+}
+
+.texts {
+  margin-top: 2%;
+  margin-left: 5%;
+  text-align: left;
+}
+
+.nav-link:hover {
+  box-shadow: inset 0 -1px 0 0 #F5DEB3;
+}
+
+#Nav li {
+  font-size: 15px;
+}
+
+#breadcrumb {
+  text-decoration: none;
+}
+
+
+
+/* Estilos de "Inicio" */
+
+/* Slider estilos */
+.conslider {
+  background-color: #343A40;
+}
+
+.c-slider {
+  margin: auto;
+  width: 50%; 
+  position: relative;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  width: 400%;
+}
+
+.slider img {
+  width: 100%;
+}
+
+.btn-prev, .btn-next {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 50%;
+  line-height: 40px;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 50%;
+  font-family: monospace;
+  cursor: pointer;
+}
+
+.btn-prev:hover, .btn-next:hover {
+  background: rgba(255, 255, 255, 1);
+}
+
+.btn-prev {
+  left: 10px;
+}
+
+.btn-next {
+  right: 10px;
+}
+
+/* Presentacion estilos */
+.convid {
+  text-align: center;
+}
+
+.convid iframe {
+  border: #343A40 7px solid;
+}
+
+/* Características */
+.subrayado {
+  border-bottom: 2px solid white;
+}
+
+.caracimg {
+  width: 10%;
+  margin: auto auto;
+}
+
+.caracimgb {
+  width: 10%;
+  margin: auto auto;
+  display: none;
+}
+
+.caracimga {
+  width: 10%;
+  margin: auto auto;
+}
+
+.caracimg img {
+  width: 100%;
+}
+
+.caracimgb img {
+  width: 100%;
+}
+
+.caracimga img {
+  width: 100%;
+}
+
+.caractext {
+  font-size: 20px;
+  font-weight: 450;
+  margin: auto;
+}
+
+.caractextb {
+  font-size: 20px;
+  font-weight: 450;
+  margin: auto;
+  display: none;
+}
+
+.caractexta {
+  font-size: 20px;
+  font-weight: 450;
+  margin: auto;
+}
+
+.concarac {
+  background-color: #343A40;
+}
+
+.concaracizq, .concaracder {
+  display: flex;
+  padding-top: 2%;
+  margin-top: 1.5%;
+}
+
+.concarac2 {
+  display: none;
+}
+
+.conimgizq, .conimgder {
+  margin: auto 2.5% auto 5%;
+  max-width: 30%;
+  padding: 2% 0;
+}
+
+.conimgizq img, .conimgder img {
+  width: 100%;
+}
+
+.textoder {
+  text-align: justify;
+  width: 100%;
+  margin: auto 5% auto 0;
+  font-size: 50px;
+  font-weight: 250;
+  color: white;
+}
+
+.textoizq {
+  text-align: justify;
+  width: 100%;
+  margin: auto 0 auto 5%;
+  font-size: 50px;
+  font-weight: 250;
+  color: white;
+}
+
+
+
+/* Estilos de "Contacto" */
+
+/* Formulario de contacto */
+.formt {
+  text-align: center;
+  font-size: 50px;
+  margin: 3%;
+}
+
+.conformgrid {
+  width: 100%;
+  margin: auto;
+  color: white;
+}
+
+.conformgrid > * {
+  padding: 20px;
+}
+
+.contactform {
+  background: #343A40;
+  border-radius: 10px;
+}
+
+.contactform form {
+  display: grid;
+}
+
+.contactform form .block {
+  grid-column: 1/3;
+}
+
+.contactform div {
+  margin: 0;
+  padding: 20px;
+}
+
+.contactform p {
+  font-size: 15px;
+}
+
+.contactform textarea {
+  resize: none;
+}
+
+.contactform textarea::-webkit-scrollbar {
+  width: 10px;
+  background: #E9ECEF;
+  border-radius: 5px 5px 0 0;
+}
+
+.contactform textarea::-webkit-scrollbar-thumb {
+  background: #F5DEB3;
+  border-radius: 5px;
+}
+
+.contactform textarea::-webkit-scrollbar-thumb:hover {
+  background: #BEAF91;
+  border-radius: 5px;
+}
+
+.contactform textarea::-webkit-scrollbar-thumb:active {
+  background: #897D65;
+  border-radius: 5px;
+}
+
+.contactform button, .contactform input, .contactform textarea {
+  width: 100%;
+  padding: 5px 0;
+  border: none;
+  background: none;
+  outline: none;
+  color: #F5DEB3;
+  border-bottom: 1px solid #eee;
+}
+
+.contactform input::placeholder, .contactform textarea::placeholder {
+  color: #897D65
+}
+
+.contactform form button {
+  background-color: #F5DEB3;
+  color: #343A40;
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.contactform form button:hover {
+  background: #BEAF91;
+  color: #E9ECEF;
+}
+
+.contactform form button:active {
+  background: #897D65;
+  color: #E9ECEF;
+}
+
+
+
+/* Estilos de "Sobre Nosotros" */
+
+/* Logo */
+.teamlogo {
+  margin: 0 auto;
+}
+
+.teamlogo img {
+  width: 100%;
+}
+
+/* Nuestro Equipo */
+.celeste {
+  color: #05739B !important;
+}
+
+#equipo {
+  background: #eee;
+  padding: 60px 0;
+}
+
+#equipo h1 {
+  margin-bottom: 50px;
+  color: #01A881;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.frontside {
+  margin-bottom: 10%;
+}
+
+.backside, .frontside {
+  margin: 5% 10%;
+}
+
+.image-flip:hover .backside {
+  transform: rotateY(0deg);
+}
+
+.image-flip:hover .frontside {
+  transform: rotateY(180deg);
+}
+
+.backside {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: white;
+  transform: rotateY(-180deg);
+}
+
+.frontside,
+.backside {
+  backface-visibility: hidden;
+  transition: 1s;
+}
+
+.card h4 {
+  color: #01a881;
+  margin-top: 5%;
+  font-size: 35px;
+}
+
+.frontside p {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.backside p {
+  font-size: 20px;
+  text-align: justify;
+}
+
+.frontside .card .card-body img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 2% 0 2.5%;
+}
+
+.textnos {
+  font-size: 35px;
+  text-align: center;
+  margin: 5%;
+}
+
+
+
+/* Estilos de "La Institución" */
+
+/* Imagen */
+.salesianos {
+  width: 100%;
+  position: relative;
+}
+
+.salesianos img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Cartas de la materia */
+.insimg, .insimg2 {
+  padding: 10px;
+  background: #E9ECEF;
+}
+
+.insimg {
+  width: 170px;
+  height: 230px;
+}
+
+.insimg2 {
+  display: none;
+}
+
+.inscont {
+  justify-content: space-evenly;
+}
+
+
+
+/* Estilos de "El Proyecto" */
+
+/* Estructura Estilos */
+.infop {
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  margin: 0 5%;
+}
+
+.fondoep {
+  background-color: #eee;
+}
+
+.conslider-ep {
+  position: relative;
+  overflow: hidden;
+}
+
+.navf h3:hover, .navc h3:hover, .navfc h3:hover {
+  background-color: #F5DEB3;
+}
+
+.navfc {
+  margin: 0 5% 1%;
+  border-bottom: 2px #343A40 solid;
+  display: none;
+}
+
+.navfc h3 {
+  margin: 0 auto;
+  cursor: pointer;
+  padding: 0.5% 5%;;
+}
+
+/* Parte Física */
+.slider-f {
+  display: flex;
+  width: 400%;
+}
+
+.navf {
+  display: flex;
+  margin: 0 5% 1%;
+  border-bottom: 2px #343A40 solid;
+}
+
+.navf h3 {
+  margin: 0 auto;
+  cursor: pointer;
+  padding: 0.5% 5%;
+}
+
+.elproyecto {
+  margin: 0 2.5% 1% 5%;
+  max-width: 35%;
+}
+
+.imgep {
+  width: 100%;
+  border: #343A40 3px solid;
+}
+
+h2 {
+  font-style: italic;
+  margin: 0 5% 0.5%;
+}
+
+.textofases {
+  text-align: justify;
+  margin-right: 5%;
+  margin-bottom: 1%;
+  width: 90vw;
+}
+
+/* Circuito y código Estilos */
+.slider-c {
+  display: flex;
+  width: 700%;
+}
+
+.slider-c section {
+  width: 100%;
+}
+
+.navc {
+  display: flex;
+  margin: 0 5% 1%;
+  border-bottom: 2px #343A40 solid;
+}
+
+.navc h3 {
+  margin: 0 auto;
+  cursor: pointer;
+  padding: 0.5% 3%;
+  font-size: 20px;
+}
+
+.circuito {
+  margin: 1.5% auto 0;
+  width: 70vw;
+}
+
+.circuitoimg {
+  width: 100%;
+}
+
+pre {
+  width: 51%;
+  height: 51vh;
+  background-color: white;
+}
+
+li.L0, li.L1, li.L2, li.L3,
+li.L5, li.L6, li.L7, li.L8 {
+  list-style-type: decimal !important;
+}
+
+.textcc {
+  text-align: justify;
+  margin: 0 5%;
+}
+
+/* Descargas y Adicionales */
+.conbtn {
+  display: flex;
+  margin: 0 2.5%;
+}
+
+.conbtn2 {
+  width: 19%;
+  margin: 0 auto;
+}
+
+.adsbtn {
+  display: flex;
+  background-color: #057258;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.adsbtn:hover {
+  background-color: #044939;
+  text-decoration: none;
+}
+
+.adsbtn p, .adsbtn2 p {
+  font-size: 15px;
+  margin: auto auto;
+  color: white;
+  text-align: center;
+}
+
+.adsbtn2 {
+  display: flex;
+  background-color: #05739B;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.adsbtn2:hover {
+  background-color: #034359;
+  text-decoration: none;
+}
+
+.adsimg {
+  margin: auto 10px;
+  width: 32px;
+  height: 32px;
+}
+
+.blue {
+  color: #05739B;
+}
+
+
+
+
+/* Responsive design */
+@media (min-width: 200px) {
+  .teamlogo {
+    width: 223px;
+    height: 163px;
+  }
+  
+  .icon {
+    margin: 0 0 10px 10px;
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media (min-width: 400px) {
+  .teamlogo {
+    width: 334px;
+    height: 245px;
+  }
+
+  .icon {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media (min-width: 600px) {
+  .teamlogo {
+    width: 445px;
+    height: 326px;
+  }
+
+  .icon {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media (max-width: 570px) {
+  .inscard {
+    margin: 5%;
+  }
+}
+
+@media (max-width: 767px) {
+  .insimg {
+    display: none;
+  }
+  .insimg2 {
+    display: block;
+  }
+}
+
+@media (min-width: 571px) {
+  .inscard {
+    margin: 2% auto;
+  }
+}
+
+@media (max-width: 1200px) {
+  /* Inicio */
+  .c-slider {
+    width: 75%;
+  }
+
+  .carac {
+    display: block;
+  }
+
+  .caracimg {
+    width: 30%;
+  }
+
+  .caracimgb {
+    width: 30%;
+    display: block;
+  }
+
+  .caracimga {
+    display: none;
+  }
+
+  .caractext {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 5.5%;
+  }
+
+  .caractextb {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 5.5%;
+    display: block;
+  }
+
+  .caractexta {
+    display: none;
+  }
+
+  .concaracizq, .concarac2 {
+    display: block;
+    padding-top: 5%;
+  }
+
+  .concaracder {
+    display: none;
+  }
+
+  .conimgder, .conimgizq {
+    margin: 0 auto;
+  }
+
+  .textoizq, .textoder {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 30px;
+  }
+
+  .textoizq {
+    padding-bottom: 2%;
+  }
+  
+  .convid {
+    height: 0;
+    padding: 30px 0 56.25%;
+    position: relative;
+  }
+  
+  .convid iframe {
+    border: #343A40 7px solid;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+  }
+  
+  /* El proyecto */
+  .contenedorflex {
+    display: block;
+  }
+
+  .elproyecto {
+    margin: 2% auto 3%;
+    max-width: 90%;
+  }
+
+  .fondoep {
+    padding-bottom: 2.5%;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .textofases {
+    text-align: justify;
+    margin-left: 5%;
+  }
+
+  pre {
+    margin: 3% auto;
+    width: 90vw;
+    height: 90vh;
+  }
+
+  .circuito {
+    width: 100vw;
+  }
+
+  .conbtn {
+    display: block;
+    margin: 0 5%;
+  }
+
+  .conbtn2 {
+    width: 100%;
+  }
+
+  .adsbtn, .adsbtn2 {
+    margin-bottom: 3%;
+  }
+
+  .navc h3 {
+    font-size: 14.5px;
+  }
+  
+
+  /* Sobre Nosotros */
+  .textr {
+    font-size: 24.5px;
+  }
+
+  .reverso .contenedorflex {
+    display: flex;
+  }
+}
+
+@media (max-width: 990px) {
+  /* Sobre Nosotros */
+  .backside, .frontside {
+    margin: 10% 2%;
+  }
+}
+
+@media (max-width: 850px) {
+  /* Inicio */
+  .caracimg {
+    width: 30%;
+    margin-top: 10%;
+  }
+
+  .caractext, .caractextb {
+    font-size: 20px;
+  }
+
+  .textoizq, .textoder {
+    font-size: 20px;
+  }
+
+  /* El Proyecto */
+  .navc {
+    display: none;
+  }
+
+  .navf {
+    display: none;
+  }
+
+  .navfc {
+    display: flex;
+  }
+}
+
+@media (max-width: 770px) {
+  /* Sobre Nosotros */
+  .backside p {
+    font-size: 15px;
+  }
+
+  /* Contacto */
+  .conformgrid, .contactform form {
+    display: block;
+  }
+
+  .conformgrid {
+    width: 100%;
+    margin: 0;
+    color: white;
+  }
+}
+
+@media (max-width: 575px) {
+  /* Sobre Nosotros */
+  .backside p {
+    font-size: 20px;
+  }
+
+  .navc h3 {
+    font-size: 6px;
+  }
+
+  /* Contacto */
+  .conformgrid {
+    display: block;
+  }
+
+  /* Institución */
+  .instext {
+    font-size: 15px;
+    text-align: justify;
+    margin: 2% 2%;
+  }
+}
+
+@media (min-width: 576px) {
+  /* Institución */
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.75);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+  
+  .salesianos:hover .overlay {
+    height: 50%;
+  }
+  
+  .instext {
+    color: #343A40;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: justify
+  }
+}
+
+@media (min-width: 740px) {
+  .instext {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  /* Global */
+  .textp {
+    font-size: 35px;
+  }
+
+  .texts {
+    font-size: 35px;
+  }
+
+  /* Inicio */
+  .btn-prev, .btn-next {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 20px;
+    top: 50%;
+  }
+
+  .caractext, .caractextb {
+    font-size: 15px;
+  }
+
+  .textoizq, .textoder {
+    font-size: 15px;
+    width: auto;
+    margin: 5% 5%;
+  }
+}
+
+@media(max-width: 330px) {
+  /* Sobre Nosotros */
+  .backside p {
+    font-size: 15px;
+  }
+
+  .backside img {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* Contacto */
+  .formt {
+    font-size: 30px;
+  }
+}
+
+@media(max-width: 290px) {
+  /* Global */
+  .navbar-brand {
+    font-size: 15px;
+  }
+
+  .textp {
+    font-size: 25px;
+  }
+
+  .texts {
+    font-size: 25px;
+  }
+
+  /* Footer */
+  .footer-m {
+    display: block;
+    justify-content: space-between;
+  }
+  .icon-gh-m {
+    margin-left: 33px; 
+  }
+  .icon-m {
+    width: 145px;
+    margin: auto;
+  }
+
+  /* El proyecto */
+  .navfc h3 {
+    font-size: 20px;
+  }
+
+  #cod1 {
+    font-size: 25px;
+  }
+
+  /* Sobre Nosotros */
+  .textnos {
+    font-size: 15px;
+  }
+
+  .textnost {
+    font-size: 30px;
+  }
+}
+
+@media(max-width: 250px) {
+  /* Global */
+  .textnav {
+    font-size: 11px;
+  }
+
+  /* Sobre Nosotros */
+  .nombres {
+    font-size: 24px;
+  }
+}
+
+@media(min-width: 291px) {
+  /* Footer */
+  .footer-m {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  @media(max-width: 349px) {
+    .icon-m {
+      width: 45px;
+    }
+  }
+}
+
+
+@media(min-width: 350px) {
+  @media(max-width: 399px) {
+    /* Footer */
+    .icon-yt-m {
+      margin-left: 33px;
+    }
+    .icon-m {
+      width: 90px;
+    }
+  }
+}
+
+@media(min-width: 400px) {
+  @media(max-width: 500px) {
+    /* Footer */
+    .icon-gh-m {
+      margin-left: 33px; 
+    }
+    .icon-m {
+      width: 135px;
+    }
+  }
+}

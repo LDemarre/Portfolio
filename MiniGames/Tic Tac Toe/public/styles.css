@@ -1,0 +1,73 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: #1b2744;
+}
+
+h1 {
+    color: white;
+    margin: 0;
+    text-align: center;
+    font-size: 100px;
+    text-transform: uppercase;
+}
+
+#container {
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+#container div {
+    background-color: white;
+    border: black solid 5px;
+	width: 150px;
+	height: 150px;
+	text-align: center;
+    font-size: 5em;
+    margin: 5px;
+}
+
+#container div:hover {
+    background-color: #ffe6a2
+}
+
+#reset {
+    display: block;
+    margin: 25px auto;
+    background: none;
+	color: #ffa260;
+	border: 2px solid;
+	padding: 1em 2em;
+	font-size: 1.5em;
+	transition: color .25s, border-color .25s, box-shadow .25s, transform .25s;
+    text-transform: uppercase;
+}
+
+#reset:hover {
+	border-color: #f1ff5c;
+	color: white;
+	box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
+	transform: translateY(-.25em);
+	cursor: pointer;
+}
+
+.res {
+    display: block;
+    margin: 0 auto;
+    font-size: 75px;
+    font-weight: 100;
+    color: white;
+    text-align: center;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+#winner {
+    display: none;
+}
+
+i {
+    margin: 1.8rem;
+}

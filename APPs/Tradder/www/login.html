@@ -1,0 +1,60 @@
+<!-- We don't need a full layout in this file because this page will be parsed with Ajax.  -->
+<div class="page" data-name="login">
+    <div class="page-content">
+        <!-- Top Navbar -->
+        <nav class="navbarB">
+            <div class="mobile-nav">
+                <div class="container">
+                    <a class="tNavbar">Tradder</a>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="navbarA">
+            <div class="container">
+                <a class="tNavbar">Tradder</a>
+            </div>
+        </nav>
+
+        <div class="form">
+            <div class="form_body">
+                <form class="rForm" method="post">
+                    <h1 class="rTitle">Iniciar Sesión</h1>
+                    <div class="group">
+                        <input autocomplete="off" type="text" name="lEmail" id="lEmail" required><span
+                            class="barra"></span>
+                        <label>Email</label>
+                    </div>
+                    <div class="group">
+                        <input autocomplete="off" type="password" name="lPassword" id="lPassword" required><span
+                            class="barra"></span>
+                        <label>Contraseña</label>
+                    </div>
+
+                    <button id="lButton" class="button_form no-ripple">Iniciar Sesión</button>
+
+                    <div class="group" id="form-message-error-login">
+                        <i class="fa-solid fa-triangle-exclamation"></i> <b>Error:</b>
+                        <span>El email no está registrado</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <footer id="footer">
+            <img src="img/logo_tradder.png" class="logo">
+            <div class="social-icons-container">
+                <a target="blank" class="link external" href="https://www.instagram.com/tradder_ar/">
+                    <img src="img/ICON_IG.png" class="social-icon">
+                </a>
+                <a target="blank" class="link external" href="https://twitter.com/Tradder_ar">
+                    <img src="img/ICON_TW.png" class="social-icon">
+                </a>
+                <a target="blank" class="link external" href="https://www.youtube.com/channel/UCdHJldwAnnBluGanbE1CQzw">
+                    <img src="img/ICON_YT.png" class="social-icon">
+                </a>
+            </div>
+            <span class="copyright">&copy;2021, Tradder. All rights reserved.</span>
+        </footer>
+    </div>
+</div>

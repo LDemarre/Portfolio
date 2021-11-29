@@ -1,0 +1,112 @@
+<!-- We don't need a full layout in this file because this page will be parsed with Ajax.  -->
+<div class="page" data-name="registro">
+    <div class="page-content">
+        <!-- Top Navbar -->
+        <nav class="navbarB">
+            <div class="mobile-nav">
+                <div class="container">
+                    <a class="tNavbar">Tradder</a>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="navbarA">
+            <div class="container">
+                <a class="tNavbar">Tradder</a>
+            </div>
+        </nav>
+
+        <div class="form">
+            <div class="form_body">
+                <form class="rForm" method="post">
+                    <h1 class="rTitle">Registro</h1>
+                    <div class="group" id="gName">
+                        <input autocomplete="off" type="text" name="Name" id="name" required><span class="barra"></span>
+                        <label>Nombre</label>
+                        <i class="form-val-status fa-regular fa-circle-xmark" id="iName"></i>
+                        <p class="form-input-error" id="form-error-Name">El usuario tiene que ser de 4 a 6 dígitos y
+                            sólo
+                            puede contener numeros,
+                            letras y guión bajo.</p>
+                    </div>
+                    <div class="group" id="gSurname">
+                        <input autocomplete="off" type="text" name="Surname" id="surname" required><span
+                            class="barra"></span>
+                        <label>Apellido</label>
+                        <i class="form-val-status fa-regular fa-circle-xmark" id="iSurname"></i>
+                        <p class="form-input-error" id="form-error-Surname">El usuario tiene que ser de 4 a 6 dígitos y
+                            sólo
+                            puede contener numeros,
+                            letras y guión bajo.</p>
+                    </div>
+                    <div class="group" id="gEmail">
+                        <input autocomplete="off" type="text" name="Email" id="rEmail" required><span
+                            class="barra"></span>
+                        <label>Email</label>
+                        <i class="form-val-status fa-regular fa-circle-xmark" id="iEmail"></i>
+                        <p class="form-input-error" id="form-error-Email">El correo sólo puede contener letras, números,
+                            puntos, guiones y guión
+                            bajo.</p>
+                    </div>
+                    <div class="group" id="gPassword">
+                        <input autocomplete="off" type="password" name="Password" id="rPassword" required><span
+                            class="barra"></span>
+                        <label>Contraseña</label>
+                        <i class="form-val-status fa-regular fa-circle-xmark" id="iPassword"></i>
+                        <p class="form-input-error" id="form-error-Password">La contraseña tiene que ser de 6 a 12
+                            dígitos.
+                        </p>
+                    </div>
+                    <div class="group" id="gConPassword">
+                        <input autocomplete="off" type="password" name="ConPassword" id="rConPassword" required><span
+                            class="barra"></span>
+                        <label>Confirmar Contraseña</label>
+                        <i class="form-val-status fa-regular fa-circle-xmark" id="iConPassword"></i>
+                        <p class="form-input-error" id="form-error-ConPassword">Ambas contraseñas tiene que ser iguales.
+                        </p>
+                    </div>
+                    <div class="group" id="gPhone">
+                        <input autocomplete="off" type="tel" name="Phone" id="rPhone" required><span
+                            class="barra"></span>
+                        <label>Número de teléfono</label>
+                        <i class="form-val-status fa-regular fa-circle-xmark" id="iPhone"></i>
+                        <p class="form-input-error" id="form-error-Phone">El teléfono sólo puede contener números y el
+                            máximo
+                            son 14 dígitos.</p>
+                    </div>
+                    <div class="group" id="gBirthday">
+                        <input autocomplete="off" type="date" name="Birthday" id="rBirthday" placeholder="index"
+                            required><span class="barra"></span>
+                        <label>Fecha de nacimiento</label>
+                        <i class="form-val-status fa-regular fa-circle-xmark" id="iBirthday"></i>
+                        <p class="form-input-error" id="form-error-Birthday">Tienes que ser mayor de 18 años</p>
+                    </div>
+
+                    <button id="rButton" class="button_form no-ripple">Registrarte</button>
+
+                    <div class="group" id="form-message-error">
+                        <i class="fa-solid fa-triangle-exclamation"></i> <b>Error:</b>
+                        <span> Rellena el formulario correctamente.</span>
+                    </div>
+                    <div class="group" id="form-message-exito">
+                        <span> Formulario rellenado correctamente.</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <img src="img/logo_tradder.png" class="logo">
+            <div class="social-icons-container">
+                <a target="blank" class="link external" href="https://www.instagram.com/tradder_ar/">
+                    <img src="img/ICON_IG.png" class="social-icon">
+                </a>
+                <a target="blank" class="link external" href="https://twitter.com/Tradder_ar">
+                    <img src="img/ICON_TW.png" class="social-icon">
+                </a>
+                <a target="blank" class="link external" href="https://www.youtube.com/channel/UCdHJldwAnnBluGanbE1CQzw">
+                    <img src="img/ICON_YT.png" class="social-icon">
+                </a>
+            </div>
+            <span class="copyright">&copy;2021, Tradder. All rights reserved.</span>
+        </footer>
+    </div>

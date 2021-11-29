@@ -1,0 +1,3543 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LED Pixel Table</title>
+  <!-- Estilos bootstrap .css -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!-- Estilos .css -->
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="icon" href="img/LOGO_LIGHT.png">
+</head>
+
+<body>
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container">
+      <a href="index.html" class="navbar-brand"><img src="img/LOGO_LIGHT.png" alt="LPT Logo"
+          style="width:40px;height:33px"> <span class="textnav">LED Pixel Table</span> </a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#Nav"><span
+          class="fas fa-angle-down"></span></button>
+      <div class="collapse navbar-collapse" id="Nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="Sobre_nosotros.html">Sobre Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="El_Proyecto.html">Acerca del Proyecto</a></li>
+          <li class="nav-item"><a class="nav-link" href="La_Institución.html">La Institución</a></li>
+          <li class="nav-item"><a class="nav-link" href="Contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Migas de pan -->
+  <ul class="breadcrumb">
+    <a href="index.html" class="breadcrumb-item text-dark" id="breadcrumb">Inicio</a>
+    <li class="breadcrumb-item active">Acerca del Proyecto</li>
+  </ul>
+
+  <!-- Texto principal -->
+  <hr class="textp">
+  <h1 class="textp">INFORMACIÓN COMPLETA DEL PROYECTO</h1>
+  <hr class="textp">
+
+  <p class="infop">El proyecto es un tablero de madera que mide 35cm de largo, 35cm de ancho y 6cm de alto y que por debajo tiene 4
+    patas de goma. Dentro tiene una cuadrícula de 10 celdas x 10 celdas separadas unas de otras por madera. Cada celda
+    mide 3,5cm x 3,5cm y contiene un LED. Este tablero cumple el rol de una pantalla, siendo las celdas, los pixeles.
+    Estos serán controlados por una aplicación móvil que se comunicará con el tablero mediante bluetooth. Teniendo un
+    sistema de puntaje que se mostrará en la misma aplicación y al final de cada juego en el tablero.
+  </p>
+
+  <!-- Parte Física y descripción -->
+  <br>
+  <h1 class="texts">Creación y armado del proyecto</h1>
+  <hr class="textp">
+  <div class="fondoep">
+    <div class="navf">
+      <h3 class="faseuno">Fase 1</h3>
+      <h3 class="fasedos">Fase 2</h3>
+      <h3 class="fasetres">Fase 3</h3>
+      <h3 class="fasecuatro">Fase 4</h3>
+    </div>
+    <div class="navfc">
+      <h3 class="faseuno"> 1</h3>
+      <h3 class="fasedos"> 2</h3>
+      <h3 class="fasetres"> 3</h3>
+      <h3 class="fasecuatro"> 4</h3>
+    </div>
+    <div class="conslider-ep">
+      <div class="slider-f">
+        <section>
+          <h2>Primera fase de creación y armado</h2>
+          <div class="contenedorflex">
+            <div class="elproyecto">
+              <img src="img/Fase1.jpeg" alt="" class="imgep">
+            </div>
+            <div class="textofases">
+              <h4>Explicación:</h4>
+              <p>Inicialmente conseguimos una pieza de madera, la cual dividimos en una cuadricula de 10x10 celdas de
+                3,3cm tanto de ancho como de largo cada una. Luego colocamos las tiras de leds de forma tal que cada
+                celda tenga un led en el centro. Por último conectamos las tiras de leds entre sí en forma de zigzag.
+              </p>
+              <h6>Problemas y soluciones:</h6>
+              <p>Uno de los posibles problemas que pudo haber ocurrido sería una mala colocación de los leds, resultando
+                en que las líneas queden torcidas, aunque esto no sucedió y aunque hubiera sucedido, no presentaría un
+                gran problema en el proyecto
+                final.</p>
+              <h6>Lista de materiales utilizados:</h6>
+              <li> Tabla de madera de 1,8 cm (alto) x 33,3 cm (largo) x 33,3 cm (ancho). </li>
+              <li> Tira LED WS2812B. </li>
+              <li> Cables. </li>
+            </div>
+          </div>
+        </section>
+        <br>
+        <section>
+          <h2>Segunda fase de creación y armado</h2>
+          <div class="contenedorflex">
+            <div class="elproyecto">
+              <img src="img/Fase2.jpeg" alt="" class="imgep">
+            </div>
+            <div class="textofases">
+              <h4>Explicación:</h4>
+              <p>Teniendo ya la base con los leds armada, conseguimos 18 tablas de madera a las que le hicimos cortes
+                para poder ensamblarlas entre sí. Estas tablas ensambladas darían como resultado la cuadrícula que se
+                encarga de delimitar cada celda.</p>
+              <h6>Problemas y soluciones:</h6>
+              <p>Los problemas que podríamos haber tenido están relacionados con los cortes de las maderas. Estos
+                podrían haber sido demasiado profundos, haciendo que las maderas quedasen flojas y el ensamble no quede
+                firme. O podrían haber quedado demasiado poco profundos, resultando en que las maderas no puedan
+                encajarse lo suficiente. Para el primer problema la única solución posible sería empezar desde cero con
+                otra madera, mientras que para el segundo, simplemente bastaría con hacer un poco más profundo el corte
+                y fijarse nuevamente si las maderas se pueden ensamblar correctamente.</p>
+              <h6>Lista de materiales utilizados:</h6>
+              <li> 18 x Tablas de madera de 3,8 cm (alto) x 33,3 cm (largo) x 0,4 cm (ancho). </li>
+            </div>
+          </div>
+        </section>
+        <br>
+        <section>
+          <h2>Tercera fase de creación y armado</h2>
+          <div class="contenedorflex">
+            <div class="elproyecto">
+              <img src="img/Fase3.jpeg" alt="" class="imgep">
+            </div>
+            <div class="textofases">
+              <h4>Explicación:</h4>
+              <p>Luego de tener la cuadrícula de madera hecha, conseguimos 4 tablas de madera que utilizamos para crear
+                los bordes del tablero. En estas realizamos un corte a pocos milímetros de la parte superior de una de
+                sus caras para poder encajar una lámina de vidrio opaco, la cual además usa de apoyo la cuadrícula de
+                madera. Este vidrio opaco se encarga de que la luz de los LEDs se vea en toda la zona que cubre la celda
+                para dar la impresión de ser un <i>"Pixel grande"</i>, en vez de iluminarse solo un pequeño punto en el
+                medio de la celda, como lo haría sin este.</p>
+              <h6>Problemas y soluciones:</h6>
+              <p>Los problemas que pudimos haber llegado a tener durante esta fase son similares a los de la fase
+                anterior, ya que también están relacionados con la profundidad del corte, pero en este caso, de las
+                maderas que conforman el borde del tablero. Un corte poco profundo significaría que el vidrio no
+                entraría en su lugar y uno demasiado profundo le impediría al vidrio estar fijo y este se movería
+                libremente.</p>
+              <h6>Lista de materiales utilizados:</h6>
+              <li> 2 x Tablas de madera de 5,2 cm (alto) x 33,3 cm (largo) x 0,9 cm (ancho). </li>
+              <li> 2 x Tablas de madera de 5,2 cm (alto) x 35,2 cm (largo) x 0,9 cm (ancho). </li>
+              <li> Lámina de vidrio opaco. </li>
+            </div>
+          </div>
+        </section>
+        <br>
+        <section>
+          <h2>Cuarta fase de creación y armado</h2>
+          <div class="contenedorflex">
+            <div class="elproyecto">
+              <img src="img/Fase4.jpeg" alt="" class="imgep">
+            </div>
+            <div class="textofases">
+              <h4>Explicación:</h4>
+              <p>Finalmente teniendo todas las partes del tablero listas para su funcionamiento junto al circuito,
+                procedimos a desarmarlo y a pintar todas las caras visibles de las maderas de color blanco.</p>
+              <h6>Problemas y soluciones:</h6>
+              <p>En esta última fase de pintado, el único problema que podría habernos sucedido sería manchar con
+                pintura por error alguno de los componentes del circuito de la plaqueta o alguno de los LEDs de la tira
+                que está pegada sobre la base del tablero. De todas formas el pintado de las maderas fue hecho lejos de
+                los elementos mencionados justamente para evitar tener que surja este problema.
+              </p>
+              <h6>Lista de materiales utilizados:</h6>
+              <li> Esmalte Sintético (Blanco) </li>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <!-- Circuito y explicación -->
+  <h1 class="texts"> Conexión de los componentes </h1>
+  <hr class="textp">
+  <div class="circuito">
+    <img src="img/Proyecto - Circuito.jpg" alt="" class="circuitoimg">
+  </div>
+  <br><br><br>
+  <div class="textcc">
+    <h4>Explicación:</h4>
+    <p> En nuestro circuito utilizamos una fuente de 5V y 0.7A que alimenta al Arduino NANO y a la tira de LEDs a través
+      de un capacitor que funciona como un filtro para evitar los picos de tensión que se produzcan nada más conectar el
+      tablero. La razón por la que los LEDs son alimentados directamente de la fuente en lugar desde el Arduino es
+      porque este no suministra sufiente corriente a los leds para lograr prender varios a la vez. Esta tira de LEDs
+      además está conectada al pin D6 del Arduino a través de una resistencia, que se va a encargar de darle la
+      información necesaria para definir cómo y que LEDs deberán encenderse. También utilizamos un módulo bluetooth que
+      es el que se va a encargar de comunicar la aplicación móvil con el tablero. Este tiene sus pines de transmisión y
+      recepción de datos conectados a los del Arduino. El pin TX del módulo bluetooth está conectado al RX del Arduino
+      de forma directa, mientras que la otra conexión está hecha mediante un divisor de tensión. La razón de esto es
+      debido al voltaje que envian los pines a la hora de transmitir/recibir datos. El Arduino lo hace en 5V, mientras
+      que el módulo bluetooth lo hace en 3.3V, si no se utilizara el divisor de tensión, el módulo recibiría una tensión
+      mayor a la soportada, lo que causaría que este se queme. Mientras que los 3.3V del módulo bluetooth sí son
+      recibidos como un 1 lógico por el Arduino, por lo que por esa parte no habría problemas. Por último, el módulo
+      bluetooth está siendo alimentado por el Arduino a través del pin de 5V.</p>
+  </div>
+  <br>
+
+  <!-- Código y explicación -->
+  <h1 class="texts"> Codificación de los juegos </h1>
+  <hr class="textp">
+  <div class="fondoep">
+    <div class="navc">
+      <h3 class="codigo">Código Principal</h3>
+      <h3 class="snake">Snake</h3>
+      <h3 class="pong">Pong</h3>
+      <h3 class="breakout">Breakout</h3>
+      <h3 class="space">Space Invaders</h3>
+      <h3 class="dice">Dice</h3>
+      <h3 class="game">Game Over</h3>
+    </div>
+    <div class="navfc">
+      <h3 class="codigo">1</h3>
+      <h3 class="snake">2</h3>
+      <h3 class="pong">3</h3>
+      <h3 class="breakout">4</h3>
+      <h3 class="space">5</h3>
+      <h3 class="dice">6</h3>
+      <h3 class="game">7</h3>
+    </div>
+    <div class="conslider-ep">
+      <div class="slider-c">
+        <section>
+          <h2 id="cod1"> Código Principal </h2>
+          <div class="contenedorflex">
+            <div class="elproyecto">
+              <img src="gifs/0.gif" alt="" class="imgep">
+            </div>
+            <pre class="prettyprint linenums">
+    /* Librería */
+    #include &#60;Adafruit_NeoPixel.h&#62;
+    
+    /* Variables y constantes del tablero */
+    #define FIELD_WIDTH   10
+    #define FIELD_HEIGHT  10
+    const int NUMPIXELS = FIELD_WIDTH * FIELD_HEIGHT;
+    const int PIN = 6;
+    int tx = 1;
+    int rx = 0;
+    String inputString = "";
+    byte BALL_DIR;
+    
+    Adafruit_NeoPixel pixels = Adafruit_NeoPixel(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
+
+    /* Controles del juego */
+    #define  DIR_UP        1
+    #define  DIR_DOWN      2
+    #define  DIR_LEFT      3
+    #define  DIR_RIGHT     4
+    #define  DIR_DOWNRIGHT 6
+    #define  DIR_UPRIGHT   7
+    #define  DIR_DOWNLEFT  8
+    #define  DIR_UPLEFT    9
+    #define  DIR_ENEMY     10
+
+    /* Botones del bluetooth */
+    #define  BTN_NONE  0
+    #define  BTN_UP    1
+    #define  BTN_DOWN  2
+    #define  BTN_LEFT  3
+    #define  BTN_RIGHT 4
+    #define  BTN_EXIT  5
+    #define  BTN_START 6
+    #define  BTN_SNAKE 7
+    #define  BTN_PONG  8
+    #define  BTN_BREAKOUT  9
+    #define  BTN_SPACE  10
+    #define  BTN_DICE  11
+    #define  BTN_CENTER  12
+    #define  BTN_FIRE  13
+
+    /* Leer direcciones */
+    uint8_t curControl = BTN_NONE;
+
+    void readInput() {
+    if (Serial.available()) {
+        while (Serial.available()) {
+            char inChar = Serial.read();
+            inputString += inChar;
+        }
+        if (inputString == "u") {
+            curControl = BTN_UP;
+        }
+        else if (inputString == "d") {
+            curControl = BTN_DOWN;
+        }
+        else if (inputString == "l") {
+            curControl = BTN_LEFT;
+        }
+        else if (inputString == "r") {
+            curControl = BTN_RIGHT;
+        }
+        else if (inputString == "e") {
+            curControl = BTN_EXIT;
+        }
+        else if (inputString == "s") {
+            curControl = BTN_START;
+        }
+        else if (inputString == "c") {
+            curControl = BTN_CENTER;
+        }
+        else if (inputString == "f") {
+            curControl = BTN_FIRE;
+        }
+        else if (inputString == "1") {
+            curControl = BTN_SNAKE;
+        }
+        else if (inputString == "2") {
+            curControl = BTN_PONG;
+        }
+        else if (inputString == "3") {
+            curControl = BTN_BREAKOUT;
+        }
+        else if (inputString == "4") {
+            curControl = BTN_SPACE;
+        }
+        else if (inputString == "5") {
+            curControl = BTN_DICE;
+        }
+        inputString = "";
+      }
+    }
+
+
+    /* Pintado de pixeles */
+    int pos = 0;//Posicion real en numeros de pixeles
+
+    void setTablePixel(int x, int y, int r, int g, int b) {
+        if (y % 2 == 0) {
+            pos = y * FIELD_WIDTH + x;
+        } else {
+            pos = y * FIELD_WIDTH + ((FIELD_WIDTH - 1) - x);
+        }
+        pixels.setPixelColor(pos, pixels.Color(r, g, b));
+    }
+
+    void clearTablePixels() {
+        for (byte i = 0; i < NUMPIXELS; i++) {
+            pixels.setPixelColor(i, pixels.Color(0, 0, 0));
+        }
+    }
+
+    /* Detección de colisiones */
+    boolean collide(byte x1, byte x2, byte y1, byte y2) {
+        if ((x1 == x2) && (y1 == y2)) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    void start () {
+    clearTablePixels();
+    pixels.show();
+    boolean inicio = true;
+
+    while (inicio) {
+        readInput();
+
+        if (curControl == BTN_START) {
+            inicio = false;
+            mainMenu();
+            break;
+        }
+      }
+    }
+
+    void mainMenu() {
+    curControl = BTN_NONE;
+    boolean menu = true;
+
+    while (menu) {
+        unsigned long prevUpdateTime = 0;
+        unsigned long curTime;
+
+        for (byte i = 0; i < NUMPIXELS; i++) {
+            byte rr = random(15);
+            byte gg = random(15);
+            byte bb = random(15);
+            pixels.setPixelColor(i, pixels.Color(rr, gg, bb));
+            delay(10);
+        }
+        pixels.show();
+
+        do {
+            readInput();
+            if (curControl == BTN_NONE) {
+                break;
+            }
+            else if (curControl == BTN_SNAKE) {
+                clearTablePixels();
+                runSnake();
+                curControl = BTN_NONE;
+                menu = false;
+                break;
+            }
+            else if (curControl == BTN_PONG) {
+                clearTablePixels();
+                runPong();
+                curControl = BTN_NONE;
+                menu = false;
+                break;
+            }
+            else if (curControl == BTN_BREAKOUT) {
+                clearTablePixels();
+                runBreakout();
+                curControl = BTN_NONE;
+                menu = false;
+                break;
+            }
+            else if (curControl == BTN_DICE) {
+                clearTablePixels();
+                runDice();
+                curControl = BTN_NONE;
+                menu = false;
+                break;
+            }
+            else if (curControl == BTN_SPACE) {
+                clearTablePixels();
+                runSpaceInvader();
+                curControl = BTN_NONE;
+                menu = false;
+                break;
+            }
+            curTime = millis();
+        }
+        while ((curTime - prevUpdateTime) < 250);
+        prevUpdateTime = curTime;
+      }
+    }
+
+    /* Funciones iniciales */
+    void setup() {
+        Serial.begin(9600);
+        randomSeed(analogRead(0));
+        pinMode(tx, OUTPUT);
+        pinMode(rx, INPUT);
+        pixels.begin();
+        pixels.show();
+        start();
+    }
+
+    void loop() {}
+    </pre>
+          </div>
+          <div class="textcc">
+            <h4>Explicación:</h4>
+            <h5>Visible:</h5>
+            <p>El tablero inicia ejecutando este código, el cual en principio hace que este mantenga los leds apagados
+              hasta que el móvil se conecta a través de la aplicación bluetooth. Desde ese momento se entra al "Menú
+              principal", en donde el tablero comienza a prender sus leds con colores aleatorios que van cambiando con
+              el paso del tiempo.</p>
+            <h5>No visible:</h5>
+            <p>El tablero constantemente pregunta por una entrada de datos de la aplicación bluetooth para determinar
+              cuando tiene que iniciar el "Menú principal" y luego, estando ya en este, comienza a preguntar nuevamente
+              para saber que juego debería iniciar. Además esta sección del código contiene funciones y datos
+              importantes como la velocidad de transmisión, los pines de recepción y transmisión de datos del módulo
+              bluetooth, la detección de colisiones usada por los demás juegos, la función de pintado de pixeles y la
+              semilla que genera aleatoriedad en el "Snake" y en el "Dice".</p>
+          </div>
+        </section>
+        <section>
+          <h2>Snake</h2>
+          <div class="contenedorflex">
+            <div class="elproyecto">
+              <img src="gifs/1.gif" alt="" class="imgep">
+            </div>
+            <pre class="prettyprint linenums">
+    /* Variables y constantes iniciales del juego */
+    byte curLength;//Longitud de la serpiente
+    short xs[100];//Matriz que contiene todos los segmentos de la serpiente, 
+                  //su máxima longitud es el tamaño de la matriz
+    short ys[100];//xs es su posición en x, ys es su posición en y
+    byte dir;//Dirección actual de la serpiente
+    byte ax = 0;//Posición en x de la manzana
+    byte ay = 0;//Posición en y de la manzana
+    byte scoreSnake;
+    byte prevScoreSnake;
+    byte speedSnake;
+        
+    boolean snakeGameOver;
+        
+    /* Morir */
+    void die() {
+        snakeGameOver = true;
+    }
+        
+    /* Direcciones */
+    void setDirection() {
+      switch (curControl) {
+        case BTN_LEFT:
+            if (dir == DIR_RIGHT) {
+                break;
+            } else {
+                dir = DIR_LEFT;
+                break;
+            }
+        case BTN_RIGHT:
+            if (dir == DIR_LEFT) {
+                break;
+            } else {
+                dir = DIR_RIGHT;
+                break;
+            }
+        case BTN_DOWN:
+            if (dir == DIR_UP) {
+                break;
+            } else {
+                dir = DIR_DOWN;
+                break;
+            }
+        case BTN_UP:
+            if (dir == DIR_DOWN) {
+                break;
+            } else {
+                dir = DIR_UP;
+                break;
+            }
+        }
+    }
+        
+        
+    void snakeInit() {
+        //Posición, dirección y variables iniciales de la serpiente
+        curLength = 3;
+        xs[0] = 3; xs[1] = 2; xs[2] = 1;
+        ys[0] = FIELD_HEIGHT / 2; ys[1] = FIELD_HEIGHT / 2; ys[2] = FIELD_HEIGHT / 2;
+        dir = DIR_RIGHT;
+        //Crear manzana en una posición aleatoria
+        ax = random(FIELD_WIDTH);
+        ay = random(FIELD_HEIGHT);
+        scoreSnake = 0;
+        prevScoreSnake = 0;
+        speedSnake = 250;
+        
+        snakeGameOver = false;
+    }
+        
+    void runSnake() {
+        snakeInit();
+        unsigned long prevUpdateTime = 0;
+        boolean snakeRunning = true;
+        while (snakeRunning) {
+        //Revisar colisión de la serpiente consigo misma
+        byte i = curLength - 1;
+        while (i >= 4) {
+            if (collide(xs[0], xs[i], ys[0], ys[i])) {
+                die();
+                Serial.print("e");
+            }
+            i = i - 1;
+        }
+        
+        if (snakeGameOver) {
+            clearTablePixels();
+            pixels.show();
+            snakeRunning = false;
+            gameOverAnim(1);
+            break;
+        }
+        
+        //Revisar colisión de la serpiente con la manzana
+        if (collide(xs[0], ax, ys[0], ay)) {
+            //Incrementar longitud de la serpiente
+            curLength = curLength + 1;
+            ++scoreSnake;
+            Serial.print(scoreSnake);
+            //Nuevo segmento de la serpiente con posición temporal
+            xs[curLength - 1] = 255;
+            ys[curLength - 1] = 255;
+        
+            //Crear otra manzana en una posición aleatoria
+            ax = random(FIELD_WIDTH);
+            ay = random(FIELD_HEIGHT);
+        
+            //Asegurarse de que la manzana no se genere dentro del cuerpo de la serpiente
+            byte i = curLength - 1;
+            for (byte i = 0; i < curLength; i++) {
+                if (collide(ax, xs[i], ay, ys[i])) {
+                    ax = random(FIELD_WIDTH);
+                    ay = random(FIELD_HEIGHT);
+                    i = 0;
+                }
+            }    
+        }
+        
+        //Aumento de velocidad de la serpiente
+        if ((scoreSnake - prevScoreSnake) == 5) {
+            prevScoreSnake = scoreSnake;
+            speedSnake = speedSnake - 25;
+        }
+        
+        //Desfasar los segmentos del cuerpo de la serpiente
+        i = curLength - 1;
+        while (i >= 1) {
+            xs[i] = xs[i - 1];
+            ys[i] = ys[i - 1];
+            i = i - 1;
+        }
+        
+        //Determinar nueva direción de la cabeza de la serpiente
+        if (dir == DIR_RIGHT) {          //Derecha
+            xs[0] = xs[0] + 1;
+        }
+        else if (dir == DIR_LEFT) {      //Izquierda
+            xs[0] = xs[0] - 1;
+        }
+        else if (dir == DIR_UP) {        //Arriba
+            ys[0] = ys[0] - 1;
+        }
+        else {                           //Abajo
+            ys[0] = ys[0] + 1;
+        }  
+        
+        //Revisar si la serpiente sale de los bordes del tablero
+        if ((xs[0] < 0) || (xs[0] >= FIELD_WIDTH) || (ys[0] < 0) || (ys[0] >= FIELD_HEIGHT)) {
+            if (xs[0] < 0) {
+                xs[0] = FIELD_WIDTH - 1;
+            }
+            else if (xs[0] >= FIELD_WIDTH) {
+                xs[0] = 0;
+            }
+            else if (ys[0] < 0) {
+                ys[0] = FIELD_HEIGHT - 1;
+            }
+            else if (ys[0] >= FIELD_HEIGHT) {
+                ys[0] = 0;
+            }
+        }
+        
+        clearTablePixels();
+        
+        //Dibujar la manzana
+        setTablePixel (ax, ay, 15, 0, 0);
+        
+        //Dibujar la serpiente
+        for (byte i = 0; i < curLength; i++) {
+            setTablePixel(xs[i], ys[i], 0, 15, 0);
+        }
+        
+        pixels.show();
+    
+        //Revisar dirección de la serpiente mientras se espera otra dirección
+        unsigned long curTime;
+        do {
+            readInput();
+            if (curControl == BTN_EXIT) {
+                die();
+                break;
+            }
+            if (curControl != BTN_NONE) {
+                setDirection();
+            }
+            curTime = millis();
+        }
+        while ((curTime - prevUpdateTime) < speedSnake); //Luego de que pase el tiempo equivalente a 
+                                                         //"speedSnake" la serpiente se mueve
+            prevUpdateTime = curTime;
+      }
+    }  
+    </pre>
+          </div>
+          <div class="textcc">
+            <h4>Explicación:</h4>
+            <h5>Visible:</h5>
+            <p>Cuando desde el menú principal se presiona el botón "Snake", comienza a ejecutarse esta parte del código.
+              El juego inicia con una fila de 3 pixeles verdes que representan a la serpiente y además se genera una
+              manzana en un lugar aleatorio del tablero. Cuando el jugador come una manzana, la serpiente aumenta su
+              longitud en un pixel. A medida que la serpiente se vuelve más larga, la velocidad de avance de la
+              serpiente también aumenta.</p>
+            <h5>No visible:</h5>
+            <p>Este juego consulta constantemente al módulo bluetooth por entradas de datos para definir en qué
+              dirección debería moverse la serpiente, o si se quiere salir del juego. Además con cada avance de la
+              serpiente se pregunta si esta está colisionando con alguna manzana para saber si aumentar su longitud o si
+              está en un borde del tablero y tiene que dar un salto y aparecer desde el otro lado de este.</p>
+          </div>
+        </section>
+        <section>
+          <h2>Pong</h2>
+          <div class="contenedorflex">
+            <div class="elproyecto">
+              <img src="gifs/2.gif" alt="" class="imgep">
+            </div>
+            <pre class="prettyprint linenums">
+    /* Variables y constantes iniciales del juego */
+    #define MAX_SCORE 5
+            
+    byte posPlayerIzq;
+    byte posPlayerDer;
+    byte scoreIzq;
+    byte scoreDer;
+    byte scoreDerApp;
+    byte ballx;
+    byte bally;
+            
+    /* Dirección de la pelota */
+    void ballDirection() {
+        switch (BALL_DIR) {
+            case DIR_LEFT:
+                ---ballx;
+                break;
+            case DIR_RIGHT:
+                ++ballx;
+                break;
+            case DIR_DOWNRIGHT:
+                ++bally;
+                ++ballx;
+                break;
+            case DIR_UPRIGHT:
+                --bally;
+                ++ballx;
+                break;
+            case DIR_DOWNLEFT:
+                ++bally;
+                --ballx;
+                break;
+            case DIR_UPLEFT:
+                --bally;
+                --ballx;
+                break;
+            }
+        }
+            
+    /* Movimiento jugador izquierda */
+    void setPosition() {
+        switch (curControl) {
+            case BTN_LEFT:
+                break;
+            case BTN_RIGHT:
+                break;
+            case BTN_DOWN:
+                if (posPlayerIzq == (FIELD_HEIGHT - 2))
+                    break;
+                else {
+                    ++posPlayerIzq;
+                    break;
+                }
+            case BTN_UP:
+                if (posPlayerIzq == 1)
+                    break;
+                else {
+                    --posPlayerIzq;
+                    break;
+                }
+            }
+        }
+            
+            
+        void pongInit() {
+            //Posición inicial de los jugadores y la pelota
+            posPlayerIzq = FIELD_HEIGHT / 2;
+            posPlayerDer = FIELD_HEIGHT / 2;
+            scoreIzq = 0;
+            scoreDer = 0;
+            ballx = 4;
+            bally = FIELD_HEIGHT / 2;
+            BALL_DIR = DIR_RIGHT;
+            curControl = BTN_NONE;
+        }
+            
+        void runPong() {
+            pongInit();
+            
+            unsigned long prevUpdateTime = 0;
+            boolean pongRunning = true;
+            while (pongRunning) {
+            /*Revisar si alguien ganó*/
+            if (scoreIzq == MAX_SCORE || scoreDer == MAX_SCORE) {
+                clearTablePixels();
+                pixels.show();
+                Serial.print("e");
+                pongRunning = false;
+                gameOverAnim(2);
+                break;
+            }
+            
+            /* Revisar desde qué dirección y en qué parte del jugador 1 chocó la pelota */
+            for (byte i = posPlayerIzq - 1; i <= posPlayerIzq + 1; i++) {
+                if (collide(ballx, 1, bally, i)) {
+                    if (i == posPlayerIzq) {
+                        BALL_DIR = DIR_RIGHT;
+                    }
+                    else if (i == posPlayerIzq + 1) {
+                        if (BALL_DIR == DIR_LEFT || BALL_DIR == DIR_DOWNLEFT) {
+                            BALL_DIR = DIR_DOWNRIGHT;
+                        }
+                        else if (BALL_DIR == DIR_UPLEFT) {
+                            BALL_DIR = DIR_UPRIGHT;
+                        }
+                    }
+                    else if (i == posPlayerIzq - 1) {
+                        if (BALL_DIR == DIR_LEFT || BALL_DIR == DIR_UPLEFT) {
+                            BALL_DIR = DIR_UPRIGHT;
+                        }
+                        else if (BALL_DIR == DIR_DOWNLEFT) {
+                            BALL_DIR = DIR_DOWNRIGHT;
+                        }
+                    }
+                }
+            }
+            
+            /* Revisar desde qué dirección y en qué parte del jugador 2 chocó la pelota */
+            for (byte i = posPlayerDer - 1; i <= posPlayerDer + 1; i++) {
+                if (collide(ballx, 8, bally, i)) {
+                    if (i == posPlayerDer) {
+                        BALL_DIR = DIR_LEFT;
+                    }
+                    else if (i == posPlayerDer + 1) {
+                        if (BALL_DIR == DIR_RIGHT || BALL_DIR == DIR_DOWNRIGHT) {
+                            BALL_DIR = DIR_DOWNLEFT;
+                        }
+                        else if (BALL_DIR == DIR_UPRIGHT) {
+                            BALL_DIR = DIR_UPLEFT;
+                        }
+                    }
+                    else if (i == posPlayerDer - 1) {
+                        if (BALL_DIR == DIR_RIGHT || BALL_DIR == DIR_UPRIGHT) {
+                            BALL_DIR = DIR_UPLEFT;
+                        }
+                        else if (BALL_DIR == DIR_DOWNRIGHT) {
+                            BALL_DIR = DIR_DOWNLEFT;
+                        }
+                    }
+                }
+            }
+            
+            /* Colisión de la pelota con los extremos superior e inferior*/
+            for (byte i = 0; i < FIELD_WIDTH; i++) {
+                if (collide(ballx, i, bally, 9 )) {
+                    if (BALL_DIR == DIR_DOWNRIGHT) {
+                        BALL_DIR = DIR_UPRIGHT;
+                    }
+                    else if (BALL_DIR == DIR_DOWNLEFT) {
+                        BALL_DIR = DIR_UPLEFT;
+                    }
+                }
+                else if (collide(ballx, i, bally, 0)) {
+                    if (BALL_DIR == DIR_UPRIGHT) {
+                        BALL_DIR = DIR_DOWNRIGHT;
+                    }
+                    else if (BALL_DIR == DIR_UPLEFT) {
+                        BALL_DIR = DIR_DOWNLEFT;
+                    }
+                }
+            }
+            
+            if (ballx == 0) {
+                ++scoreDer;
+                scoreDerApp = scoreDer + 5;
+                Serial.print(scoreDerApp);
+                ballx = 5;
+                bally = FIELD_HEIGHT / 2;
+                BALL_DIR = DIR_LEFT;
+            }
+            else if (ballx == 9) {
+                ++scoreIzq;
+                Serial.print(scoreIzq);
+                ballx = 4;
+                bally = FIELD_HEIGHT / 2;
+                BALL_DIR = DIR_RIGHT;
+            }
+            
+            ballDirection();
+            
+            /* Movimiento de la CPU */
+            if (posPlayerDer != 8 && posPlayerDer != 1 && ballx > 5) {
+                if (bally == posPlayerDer) {
+                    posPlayerDer = bally;
+                }
+            
+                else if (bally > posPlayerDer) {
+                    ++posPlayerDer;
+                }
+            
+                else if (bally < posPlayerDer) {
+                    --posPlayerDer;
+                }
+            } else {
+                if (bally == 7 && posPlayerDer == 8) {
+                    --posPlayerDer;
+                }
+                else if (bally == 2 && posPlayerDer == 1) {
+                    ++posPlayerDer;
+                }
+            }
+            
+            
+            clearTablePixels();
+            
+            //Dibujar la pelota
+            setTablePixel(ballx, bally, 15, 15, 15);
+            
+            //Dibujar el jugador de la izquierda
+            for (byte i = posPlayerIzq - 1; i <= posPlayerIzq + 1; i++) {
+                setTablePixel(0, i, 0, 0, 15);
+            }
+            
+            //Dibujar el jugador de la derecha
+            for (byte  i = posPlayerDer - 1; i <= posPlayerDer + 1; i++) {
+                setTablePixel((FIELD_WIDTH - 1), i, 15, 0, 0);
+            }
+            
+            pixels.show();
+            
+            /* Revisar dirección del jugador 1 mientras se espera otra dirección */
+            unsigned long curTime;
+            boolean dirChanged = false;
+            do {
+                readInput();
+                if (curControl == BTN_EXIT) {
+                    pongRunning = false;
+                    gameOverAnim(2);
+                    break;
+                }
+                if (curControl != BTN_NONE && !dirChanged) { //Solo se puede cambiar de dirección una vez
+                    dirChanged = true;
+                    setPosition();
+                }
+                curTime = millis();
+            }
+            while ((curTime - prevUpdateTime) < 250); //Luego de 250ms la pelota se mueve
+            prevUpdateTime = curTime;
+            curControl = BTN_NONE;
+        }
+    }
+    </pre>
+          </div>
+          <div class="textcc">
+            <h4>Explicación:</h4>
+            <h5>Visible:</h5>
+            <p>Cuando desde el menú principal se presiona el botón "Pong", comienza a ejecutarse esta parte del código.
+              El juego inicia con dos pequeñas columnas de 3 pixeles de alto y de dos colores distintos a cada costado
+              del tablero, además de una pelota en el centro del tablero. El objetivo del jugador es hacer que la pelota
+              entre en el borde contrario del tablero mientras defiende su lado. Luego de que alguno de los dos
+              jugadores anote 5 veces, el juego termina.</p>
+            <h5>No visible:</h5>
+            <p>Este juego consulta constantemente al módulo bluetooth por entradas de datos para definir en qué
+              dirección debería moverse el jugador, o si se quiere salir del juego. Además con cada avance del juego se
+              pregunta si la pelota está colisionando con alguno de los dos jugadores, si esta ha cruzado los bordes
+              derecho o izquierdo, si esta ha colisionado con los bordes superior o inferior para hacerla rebotar, o si
+              el jugador está colisionando con estos mismos bordes para que este no pueda salir del tablero. Además de
+              que dependiendo ciertas condiciones, el jugador de la derecha decidirá como moverse.</p>
+          </div>
+        </section>
+        <section>
+          <h2>Breakout</h2>
+          <div class="contenedorflex">
+            <div class="elproyecto">
+              <img src="gifs/3.gif" alt="" class="imgep">
+            </div>
+            <pre class="prettyprint linenums">
+    /* Variables iniciales del juego */
+    byte posPlayer;
+    byte ballbx;
+    byte ballby;
+        
+    byte lrojos[10];
+    byte lnaranjas[10];
+    byte lamarillos[10];
+    byte lverdes[10];
+    byte lazules[10];
+        
+    byte scoreBreakout;
+    byte prevScoreBreakout;
+    byte lifesBreakout;
+        
+    void ballBreakOutDirection() {
+      switch (BALL_DIR) {
+        case DIR_DOWN:
+          ++ballby;
+          break;
+        case DIR_DOWNRIGHT:
+          if (ballbx == 9) {
+            break;
+          } else {
+            ++ballby;
+            ++ballbx;
+            break;
+          }
+        case DIR_UPRIGHT:
+          if (ballby == 0 || ballbx == 9) {
+            break;
+          } else {
+            --ballby;
+            ++ballbx;
+            break;
+          }
+        case DIR_DOWNLEFT:
+          if (ballbx == 0) {
+            break;
+          } else {
+            ++ballby;
+            --ballbx;
+            break;
+          }
+        case DIR_UPLEFT:
+          if (ballby == 0 || ballbx == 0) {
+            break;
+          } else {
+            --ballby;
+            --ballbx;
+            break;
+          }
+      }
+    }
+        
+    void setMovement() {
+      switch (curControl) {
+        case BTN_LEFT:
+          if (posPlayer == 1) {
+            break;
+            } else {
+              --posPlayer;
+              break;
+            }
+        case BTN_RIGHT:
+          if (posPlayer == (FIELD_WIDTH - 2)) {
+            break;
+          } else {
+            ++posPlayer;
+            break;
+          }
+        case BTN_DOWN:
+          break;
+        case BTN_UP:
+          break;
+      }
+    }
+        
+    void breakoutInit() {
+      posPlayer = FIELD_WIDTH / 2;
+      ballbx = FIELD_WIDTH / 2;
+      ballby = FIELD_WIDTH / 2;
+      BALL_DIR = DIR_DOWN;
+      lrojos[0]     = 0; lrojos[1] = 1; lrojos[2] = 2; lrojos[3] = 3; lrojos[4] = 4; 
+      lrojos[5] = 5; lrojos[6] = 6; lrojos[7] = 7; lrojos[8] = 8; lrojos[9] = 9;
+      lnaranjas[0]  = 0; lnaranjas[1] = 1; lnaranjas[2] = 2; lnaranjas[3] = 3; lnaranjas[4] = 4; 
+      lnaranjas[5] = 5; lnaranjas[6] = 6; lnaranjas[7] = 7; lnaranjas[8] = 8; lnaranjas[9] = 9;
+      lamarillos[0] = 0; lamarillos[1] = 1; lamarillos[2] = 2; lamarillos[3] = 3; lamarillos[4] = 4; 
+      lamarillos[5] = 5; lamarillos[6] = 6; lamarillos[7] = 7; lamarillos[8] = 8; lamarillos[9] = 9;
+      lverdes[0]    = 0; lverdes[1] = 1; lverdes[2] = 2; lverdes[3] = 3; lverdes[4] = 4; 
+      lverdes[5] = 5; lverdes[6] = 6; lverdes[7] = 7; lverdes[8] = 8; lverdes[9] = 9;
+      lazules[0]    = 0; lazules[1] = 1; lazules[2] = 2; lazules[3] = 3; lazules[4] = 4; 
+      lazules[5] = 5; lazules[6] = 6; lazules[7] = 7; lazules[8] = 8; lazules[9] = 9;
+      scoreBreakout = 0;
+      lifesBreakout = 3;
+    }
+        
+    void runBreakout() {
+      breakoutInit();
+        
+      unsigned long prevUpdateTime = 0;
+      boolean breakoutRunning = true;
+      while (breakoutRunning) {
+        
+      if (scoreBreakout == 50) {
+        Serial.print("e");
+        breakoutRunning = false;
+        gameOverAnim(3);
+        break;
+      }
+        
+      /* Revisar colisión del jugador con la pelota */
+      for (byte i = posPlayer - 1; i <= posPlayer + 1; i++) {
+        if (collide(ballbx, i, ballby, 8)) {
+          if (i == posPlayer) {
+            byte a = random(1, 3);
+            if (BALL_DIR == DIR_DOWN) {
+                if (a == 1) {
+                  BALL_DIR = DIR_UPRIGHT;
+                }
+                else if (a == 2) {
+                  BALL_DIR = DIR_UPLEFT;
+                }
+              }
+              else if (BALL_DIR == DIR_DOWNRIGHT) {
+                BALL_DIR = DIR_UPRIGHT;
+              }
+              else if (BALL_DIR == DIR_DOWNLEFT) {
+                BALL_DIR = DIR_UPLEFT;
+              }
+            }
+            else if (i == posPlayer - 1) {
+              if (BALL_DIR == DIR_DOWN) {
+                BALL_DIR = DIR_UPLEFT;
+              }
+              else if (BALL_DIR == DIR_DOWNLEFT) {
+                BALL_DIR = DIR_UPLEFT;
+              }
+              else if (BALL_DIR == DIR_DOWNRIGHT) {
+                BALL_DIR = DIR_UPRIGHT;
+              }
+            }
+            else if (i == posPlayer + 1) {
+              if (BALL_DIR == DIR_DOWN) {
+                BALL_DIR = DIR_UPRIGHT;
+              }
+              else if (BALL_DIR == DIR_DOWNLEFT) {
+                BALL_DIR = DIR_UPLEFT;
+              }
+              else if (BALL_DIR == DIR_DOWNRIGHT) {
+                BALL_DIR = DIR_UPRIGHT;
+              }
+            }
+          }
+          else if (collide(ballbx, posPlayer - 2, ballby, 8) && BALL_DIR == DIR_DOWNRIGHT) {
+            BALL_DIR = DIR_UPLEFT;
+          }
+          else if (collide(ballbx, posPlayer + 2, ballby, 8) && BALL_DIR == DIR_DOWNLEFT) {
+            BALL_DIR = DIR_UPRIGHT;
+          }
+        }
+        
+        
+        /* Revisar colisión de la pelota con los extremos y el techo */
+        for (byte i = 0; i < FIELD_WIDTH; i++) {
+            if (collide(ballbx, 9, ballby, i )) {
+              if (BALL_DIR == DIR_UPRIGHT) {
+                BALL_DIR = DIR_UPLEFT;
+              }
+              else if (BALL_DIR == DIR_DOWNRIGHT) {
+                BALL_DIR = DIR_DOWNLEFT;
+              }
+            }
+            else if (collide(ballbx, 0, ballby, i)) {
+              if (BALL_DIR == DIR_UPLEFT) {
+                BALL_DIR = DIR_UPRIGHT;
+              }
+              else if (BALL_DIR == DIR_DOWNLEFT) {
+                BALL_DIR = DIR_DOWNRIGHT;
+              }
+            }
+            else if (collide(ballbx, i, ballby, 0)) {
+              if (BALL_DIR == DIR_UPRIGHT) {
+                BALL_DIR = DIR_DOWNRIGHT;
+              }
+              else if (BALL_DIR == DIR_UPLEFT) {
+                BALL_DIR = DIR_DOWNLEFT;
+            }
+          }
+        }
+        
+        
+        /* Revisar colisión de la pelota con los ladrillos dependiendo de su direccion */
+        for (byte i = 0; i < 6; i++) {
+        for (byte i = 0; i < FIELD_WIDTH; i++) {
+          /* Direccion arriba-derecha */
+          if (BALL_DIR == DIR_UPRIGHT) {
+            //Azules
+            if (collide(ballbx, lazules[i] , ballby, 5)) {
+              lazules[i] = 255;
+              ++scoreBreakout;
+              BALL_DIR = DIR_DOWNRIGHT;
+            }
+            else if (collide(ballbx, lazules[i] - 1 , ballby, 4)) {
+              lazules[i] = 255;
+              ++scoreBreakout;
+              BALL_DIR = DIR_UPLEFT;
+            }
+            else if (collide(ballbx, lazules[i] - 1, ballby, 5) && !collide(ballbx, lazules[i - 1] , ballby, 5)) {
+              lazules[i] = 255;
+              ++scoreBreakout;
+              BALL_DIR = DIR_DOWNLEFT;
+            }
+        
+            //Verdes
+            else if (collide(ballbx, lverdes[i] , ballby, 4)) {
+              lverdes[i] = 255;
+              ++scoreBreakout;
+              BALL_DIR = DIR_DOWNRIGHT;
+            }
+            else if (collide(ballbx, lverdes[i] - 1 , ballby, 3)) {
+              lverdes[i] = 255;
+              ++scoreBreakout;
+              BALL_DIR = DIR_UPLEFT;
+            }
+            else if (collide(ballbx, lverdes[i] - 1, ballby, 4) && !collide(ballbx, lverdes[i - 1] , ballby, 4) 
+                     && !collide(ballbx, lazules[i] - 1 , ballby, 4)) {
+              lverdes[i] = 255;
+              ++scoreBreakout;
+              BALL_DIR = DIR_DOWNLEFT;
+            }
+        
+            //Amarillos
+            else if (collide(ballbx, lamarillos[i] , ballby, 3)) {
+              lamarillos[i] = 255;
+              ++scoreBreakout;
+              BALL_DIR = DIR_DOWNRIGHT;
+            }
+            else if (collide(ballbx, lamarillos[i] - 1 , ballby, 2)) {
+              lamarillos[i] = 255;
+              ++scoreBreakout;
+              BALL_DIR = DIR_UPLEFT;
+            }
+            else if (collide(ballbx, lamarillos[i] - 1, ballby, 3) && !collide(ballbx, lamarillos[i - 1] , ballby, 3) 
+                     && !collide(ballbx, lverdes[i] - 1 , ballby, 2)) {
+              lamarillos[i] = 255;
+              ++scoreBreakout;
+              BALL_DIR = DIR_DOWNLEFT;
+            }
+        
+            //Naranjas
+            else if (collide(ballbx, lnaranjas[i] , ballby, 2)) {
+              lnaranjas[i] = 255;
+              ++scoreBreakout;
+              BALL_DIR = DIR_DOWNRIGHT;
+            }
+            else if (collide(ballbx, lnaranjas[i] - 1 , ballby, 1)) {
+              lnaranjas[i] = 255;
+              ++scoreBreakout;
+              BALL_DIR = DIR_UPLEFT;
+            }
+            else if (collide(ballbx, lnaranjas[i] - 1, ballby, 2) && !collide(ballbx, lnaranjas[i - 1] , ballby, 2) 
+                     && !collide(ballbx, lamarillos[i] - 1 , ballby, 2)) {
+              lnaranjas[i] = 255;
+              ++scoreBreakout;
+              BALL_DIR = DIR_DOWNLEFT;
+            }
+        
+            //Rojos
+            else if (collide(ballbx, lrojos[i] , ballby, 1)) {
+              lrojos[i] = 255;
+              ++scoreBreakout;
+              BALL_DIR = DIR_DOWNRIGHT;
+            }
+            else if (collide(ballbx, lrojos[i] - 1 , ballby, 0)) {
+              lrojos[i] = 255;
+              ++scoreBreakout;
+              BALL_DIR = DIR_UPLEFT;
+            }
+            else if (collide(ballbx, lrojos[i] - 1, ballby, 1) && !collide(ballbx, lrojos[i - 1] , ballby, 1) 
+                     && !collide(ballbx, lnaranjas[i] - 1 , ballby, 1)) {
+              lrojos[i] = 255;
+              ++scoreBreakout;
+              BALL_DIR = DIR_DOWNLEFT;
+            }
+          }
+        
+        
+            /* Direccion arriba-izquierda */
+            else if (BALL_DIR == DIR_UPLEFT) {
+            //Azules
+            if (collide(ballbx, lazules[i], ballby, 5)) {
+              lazules[i] = 255;
+              ++scoreBreakout;
+              BALL_DIR = DIR_DOWNLEFT;
+            }
+            else if (collide(ballbx, lazules[i] + 1 , ballby, 4)) {
+              lazules[i] = 255;
+              ++scoreBreakout;
+              BALL_DIR = DIR_UPRIGHT;
+            }
+            else if (collide(ballbx, lazules[i] + 1, ballby, 5) && !collide(ballbx, lazules[i + 1] , ballby, 5)) {
+              lazules[i] = 255;
+              ++scoreBreakout;
+              BALL_DIR = DIR_DOWNRIGHT;
+            }
+        
+            //Verdes
+            else if (collide(ballbx, lverdes[i] , ballby, 4)) {
+              lverdes[i] = 255;
+              ++scoreBreakout;
+              BALL_DIR = DIR_DOWNLEFT;
+            }
+            else if (collide(ballbx, lverdes[i] + 1 , ballby, 3)) {
+              lverdes[i] = 255;
+              ++scoreBreakout;
+              BALL_DIR = DIR_UPRIGHT;
+            }
+            else if (collide(ballbx, lverdes[i] + 1, ballby, 4) && !collide(ballbx, lverdes[i + 1] , ballby, 4) 
+                     && !collide(ballbx, lazules[i] + 1 , ballby, 4)) {
+              lverdes[i] = 255;
+              ++scoreBreakout;
+              BALL_DIR = DIR_DOWNRIGHT;
+            }
+        
+            //Amarillos
+            else if (collide(ballbx, lamarillos[i] , ballby, 3)) {
+              lamarillos[i] = 255;
+              ++scoreBreakout;
+              BALL_DIR = DIR_DOWNLEFT;
+            }
+            else if (collide(ballbx, lamarillos[i] + 1 , ballby, 2)) {
+              lamarillos[i] = 255;
+              ++scoreBreakout;
+              BALL_DIR = DIR_UPRIGHT;
+            }
+            else if (collide(ballbx, lamarillos[i] + 1, ballby, 3) && !collide(ballbx, lamarillos[i + 1] , ballby, 3) 
+                     && !collide(ballbx, lverdes[i] + 1 , ballby, 3)) {
+              lamarillos[i] = 255;
+              ++scoreBreakout;
+              BALL_DIR = DIR_DOWNRIGHT;
+            }
+        
+            //Naranjas
+            else if (collide(ballbx, lnaranjas[i] , ballby, 2)) {
+              lnaranjas[i] = 255;
+              ++scoreBreakout;
+              BALL_DIR = DIR_DOWNLEFT;
+            }
+            else if (collide(ballbx, lnaranjas[i] + 1 , ballby, 1)) {
+              lnaranjas[i] = 255;
+              ++scoreBreakout;
+              BALL_DIR = DIR_UPRIGHT;
+            }
+            else if (collide(ballbx, lnaranjas[i] + 1, ballby, 2) && !collide(ballbx, lnaranjas[i + 1] , ballby, 2) 
+                     && !collide(ballbx, lamarillos[i] + 1 , ballby, 2)) {
+              lnaranjas[i] = 255;
+              ++scoreBreakout;
+              BALL_DIR = DIR_DOWNRIGHT;
+            }
+        
+            //Rojos
+            else if (collide(ballbx, lrojos[i] , ballby, 1)) {
+              lrojos[i] = 255;
+              ++scoreBreakout;
+              BALL_DIR = DIR_DOWNLEFT;
+            }
+            else if (collide(ballbx, lrojos[i] + 1 , ballby, 0)) {
+              lrojos[i] = 255;
+              ++scoreBreakout;
+              BALL_DIR = DIR_UPRIGHT;
+            }
+            else if (collide(ballbx, lrojos[i] + 1, ballby, 1) && !collide(ballbx, lrojos[i + 1] , ballby, 1) 
+                     && !collide(ballbx, lnaranjas[i] + 1 , ballby, 1)) {
+              lrojos[i] = 255;
+              ++scoreBreakout;
+              BALL_DIR = DIR_DOWNRIGHT;
+            }
+          }
+        
+        
+            /* Direccion abajo-derecha */
+            else if (BALL_DIR == DIR_DOWNRIGHT) {
+            //Azules
+            if (collide(ballbx, lazules[i], ballby, 3)) {
+              lazules[i] = 255;
+              ++scoreBreakout;
+              BALL_DIR = DIR_UPRIGHT;
+            }
+            else if (collide(ballbx, lazules[i] - 1 , ballby, 4)) {
+              lazules[i] = 255;
+              ++scoreBreakout;
+              BALL_DIR = DIR_DOWNLEFT;
+            }
+            else if (collide(ballbx, lazules[i] - 1, ballby, 3) && !collide(ballbx, lazules[i - 1] , ballby, 3) 
+                     && !collide (ballbx, lverdes[i] - 1, ballby, 3)) {
+              lazules[i] = 255;
+              ++scoreBreakout;
+              BALL_DIR = DIR_UPLEFT;
+            }
+        
+            //Verdes
+            else if (collide(ballbx, lverdes[i] , ballby, 2)) {
+              lverdes[i] = 255;
+              ++scoreBreakout;
+              BALL_DIR = DIR_UPRIGHT;
+            }
+            else if (collide(ballbx, lverdes[i] - 1 , ballby, 3)) {
+              lverdes[i] = 255;
+              ++scoreBreakout;
+              BALL_DIR = DIR_DOWNLEFT;
+            }
+            else if (collide(ballbx, lverdes[i] - 1, ballby, 2) && !collide(ballbx, lverdes[i - 1] , ballby, 2) 
+                     && !collide(ballbx, lamarillos[i] - 1 , ballby, 2)) {
+              lverdes[i] = 255;
+              ++scoreBreakout;
+              BALL_DIR = DIR_UPLEFT;
+            }
+        
+            //Amarillos
+            else if (collide(ballbx, lamarillos[i] , ballby, 1)) {
+              lamarillos[i] = 255;
+              ++scoreBreakout;
+              BALL_DIR = DIR_UPRIGHT;
+            }
+            else if (collide(ballbx, lamarillos[i] - 1 , ballby, 2)) {
+              lamarillos[i] = 255;
+              ++scoreBreakout;
+              BALL_DIR = DIR_DOWNLEFT;
+            }
+            else if (collide(ballbx, lamarillos[i] - 1, ballby, 1) && !collide(ballbx, lamarillos[i - 1] , ballby, 1) 
+                     && !collide(ballbx, lnaranjas[i] - 1 , ballby, 1)) {
+              lamarillos[i] = 255;
+              ++scoreBreakout;
+              BALL_DIR = DIR_UPLEFT;
+            }
+        
+            //Naranjas
+            else if (collide(ballbx, lnaranjas[i] , ballby, 0)) {
+              lnaranjas[i] = 255;
+              ++scoreBreakout;
+              BALL_DIR = DIR_UPRIGHT;
+            }
+            else if (collide(ballbx, lnaranjas[i] - 1 , ballby, 1)) {
+              lnaranjas[i] = 255;
+              ++scoreBreakout;
+              BALL_DIR = DIR_DOWNLEFT;
+            }
+            else if (collide(ballbx, lnaranjas[i] - 1, ballby, 0) && !collide(ballbx, lnaranjas[i - 1] , ballby, 0) 
+                     && !collide(ballbx, lrojos[i] - 1 , ballby, 0)) {
+              lnaranjas[i] = 255;
+              ++scoreBreakout;
+              BALL_DIR = DIR_UPLEFT;
+            }
+        
+            //Rojos
+            else if (collide(ballbx, lrojos[i] - 1, ballby, 0)) {
+              lrojos[i] = 255;
+              ++scoreBreakout;
+              BALL_DIR = DIR_DOWNLEFT;
+            }
+          }
+        
+        
+            /* Direccion abajo-left */
+            else if (BALL_DIR == DIR_DOWNLEFT) {
+            //Azules
+            if (collide(ballbx, lazules[i], ballby, 3)) {
+              lazules[i] = 255;
+              ++scoreBreakout;
+              BALL_DIR = DIR_UPLEFT;
+            }
+            else if (collide(ballbx, lazules[i] + 1 , ballby, 4)) {
+              lazules[i] = 255;
+              ++scoreBreakout;
+              BALL_DIR = DIR_DOWNRIGHT;
+            }
+            else if (collide(ballbx, lazules[i] + 1, ballby, 3) && !collide(ballbx, lazules[i + 1] , ballby, 3) 
+                     && !collide (ballbx, lverdes[i] + 1, ballby, 3)) {
+              lazules[i] = 255;
+              ++scoreBreakout;
+              BALL_DIR = DIR_UPRIGHT;
+            }
+        
+            //Verdes
+            else if (collide(ballbx, lverdes[i] , ballby, 2)) {
+              lverdes[i] = 255;
+              ++scoreBreakout;
+              BALL_DIR = DIR_UPLEFT;
+            }
+            else if (collide(ballbx, lverdes[i] + 1 , ballby, 3)) {
+              lverdes[i] = 255;
+              ++scoreBreakout;
+              BALL_DIR = DIR_DOWNRIGHT;
+            }
+            else if (collide(ballbx, lverdes[i] + 1, ballby, 2) && !collide(ballbx, lverdes[i + 1] , ballby, 2) 
+                     && !collide(ballbx, lamarillos[i] + 1 , ballby, 2)) {
+              lverdes[i] = 255;
+              ++scoreBreakout;
+              BALL_DIR = DIR_UPRIGHT;
+            }
+        
+            //Amarillos
+            else if (collide(ballbx, lamarillos[i] , ballby, 1)) {
+              lamarillos[i] = 255;
+              ++scoreBreakout;
+              BALL_DIR = DIR_UPLEFT;
+            }
+            else if (collide(ballbx, lamarillos[i] + 1 , ballby, 2)) {
+              lamarillos[i] = 255;
+              ++scoreBreakout;
+              BALL_DIR = DIR_DOWNRIGHT;
+            }
+            else if (collide(ballbx, lamarillos[i] + 1, ballby, 1) && !collide(ballbx, lamarillos[i + 1] , ballby, 1) 
+                     && !collide(ballbx, lnaranjas[i] + 1 , ballby, 1)) {
+              lamarillos[i] = 255;
+              ++scoreBreakout;
+              BALL_DIR = DIR_UPRIGHT;
+            }
+        
+            //Naranjas
+            else if (collide(ballbx, lnaranjas[i] , ballby, 0)) {
+              lnaranjas[i] = 255;
+              ++scoreBreakout;
+              BALL_DIR = DIR_UPLEFT;
+            }
+            else if (collide(ballbx, lnaranjas[i] + 1 , ballby, 1)) {
+              lnaranjas[i] = 255;
+              ++scoreBreakout;
+              BALL_DIR = DIR_DOWNRIGHT;
+            }
+            else if (collide(ballbx, lnaranjas[i] + 1, ballby, 0) && !collide(ballbx, lnaranjas[i + 1] , ballby, 0) 
+                     && !collide(ballbx, lrojos[i] + 1 , ballby, 0)) {
+              lnaranjas[i] = 255;
+              ++scoreBreakout;
+              BALL_DIR = DIR_UPRIGHT;
+            }
+        
+              //Rojos
+            else if (collide(ballbx, lrojos[i] + 1, ballby, 0)) {
+              lrojos[i] = 255;
+              ++scoreBreakout;
+              BALL_DIR = DIR_DOWNRIGHT;
+            }
+          }
+        }
+      }
+        
+      ballBreakOutDirection();
+        
+      if (scoreBreakout - prevScoreBreakout > 0) {
+        Serial.println(scoreBreakout);
+        prevScoreBreakout = scoreBreakout;
+      }
+        
+        
+        
+      /* Sistema de vidas */
+      for (byte i = 0; i < FIELD_WIDTH; i++) {
+        if (collide(ballbx, i, ballby, 9 )) {
+          --lifesBreakout;
+          ballbx = FIELD_WIDTH / 2;
+          ballby = (FIELD_WIDTH / 2) + 1;
+          BALL_DIR = DIR_DOWN;
+          if (lifesBreakout == 0) {
+            breakoutRunning = false;
+            Serial.print("e");
+            gameOverAnim(3);
+            break;
+          }
+        }
+      }
+        
+      clearTablePixels();
+        
+      /* Dibujar la pelota */
+      setTablePixel(ballbx, ballby, 15, 15, 15);
+        
+      /* Dibujar los ladrillos */
+      for (byte i = 0; i < FIELD_WIDTH; i++) {
+        setTablePixel(lrojos[i], 0, 15, 0, 0);      // Ladrillos rojos,
+        setTablePixel(lnaranjas[i], 1, 15, 7, 0);   // naranjas,
+        setTablePixel(lamarillos[i], 2, 15, 15, 0); // amarillos,
+        setTablePixel(lverdes[i], 3, 7, 15, 0);     // verdes,
+        setTablePixel(lazules[i], 4, 0, 7, 15);     // y azules
+      }
+        
+      /* Dibujar al jugador */
+      for (byte i = posPlayer - 1; i <= posPlayer + 1; i++) {
+        setTablePixel(i, 9, 15, 15, 15);
+      }
+        
+      pixels.show();
+        
+      unsigned long curTime;
+      boolean dirChanged = false;
+      do {
+        readInput();
+          if (curControl == BTN_EXIT) {
+            breakoutRunning = false;
+            gameOverAnim(3);
+            break;
+          }
+          if (curControl != BTN_NONE && !dirChanged) { //Solo se puede cambiar de dirección una vez
+            dirChanged = true;
+            setMovement();
+            curControl = BTN_NONE;
+          }
+          curTime = millis();
+        }
+        while ((curTime - prevUpdateTime) < 250); //Luego de 250ms el juegador se mueve
+        prevUpdateTime = curTime;
+      }
+    }
+    </pre>
+          </div>
+          <div class="textcc">
+            <h4>Explicación:</h4>
+            <h5>Visible:</h5>
+            <p>Cuando desde el menú principal se presiona el botón "Breaokut", comienza a ejecutarse esta parte del
+              código. El juego inicia con cinco filas de distintos colores cada una, que ocupan todo el ancho del
+              tablero, una pequeña fila de 3 pixeles ubicada en la parte inferior del tablero y una pelota. El objetivo
+              del jugador es hacer que la pelota destruya todas las filas de colores sin que la pelota toque el borde
+              inferior del tablero, si esto último ocurre, el jugador perderá una vida. Luego de que todos los bloques
+              sean destruidos o el jugador pierda todas sus vidas, el juego termina.</p>
+            <h5>No visible:</h5>
+            <p>Este juego consulta constantemente al módulo bluetooth por entradas de datos para definir en qué
+              dirección debería moverse el jugador, o si se quiere salir del juego. Además con cada avance del juego se
+              pregunta si la pelota está colisionando con alguno de lo pixeles de las filas de colores, si esta ha
+              colisionado con el jugador, si esta ha colisionado con los bordes izquierdo y derecho para hacerla
+              rebotar, o si el jugador está colisionando con estos mismos bordes para que este no pueda salir del
+              tablero.</p>
+          </div>
+        </section>
+        <section>
+          <h2>Space Invaders</h2>
+          <div class="contenedorflex">
+            <div class="elproyecto">
+              <img src="gifs/4.gif" alt="" class="imgep">
+            </div>
+            <pre class="prettyprint linenums">
+    /* Variables iniciales del juego */
+    byte posPlayerSpace;
+    byte bulletx;
+    byte bullety;
+    byte bulletEnemyx;
+    byte bulletEnemyy;
+        
+    byte iazules[10];
+    byte ivioletas[10];
+    byte icelestes[10];
+    byte iverdes[10];
+    byte iamarillos[10];
+        
+    byte scoreSpace;
+    byte lifesSpace;
+    byte BALL_DIRENEMY;
+        
+    void bulletDirectionPlayer () {
+      switch (BALL_DIR) {
+        case DIR_UP:
+          if (bullety == 0) {
+            bullety = 255;
+            bulletx = 255;
+            break;
+          } else {
+            --bullety;
+            break;
+          }
+      }
+    }
+        
+    void bulletDirectionEnemy () {
+      switch (BALL_DIRENEMY) {
+        case DIR_ENEMY:
+          if (bulletEnemyy == 9) {
+            bulletEnemyy = 255;
+            bulletEnemyx = 255;
+            break;
+          } else {
+            ++bulletEnemyy;
+            break;
+          }
+      }
+    }
+        
+    void setCirculation() {
+      switch (curControl) {
+        case BTN_LEFT:
+          if (posPlayerSpace == 1) {
+            break;
+          } else {
+            --posPlayerSpace;
+            break;
+          }
+        case BTN_RIGHT:
+          if (posPlayerSpace == FIELD_WIDTH - 2) {
+            break;
+          } else {
+            ++posPlayerSpace;
+            break;
+          }
+        case BTN_FIRE:
+          bulletx = posPlayerSpace;
+          bullety = FIELD_HEIGHT - 3;
+          BALL_DIR = DIR_UP;
+          break;
+        case BTN_DOWN:
+          break;
+        case BTN_UP:
+          break;
+      }
+    }
+        
+    void spaceInit () {
+      posPlayerSpace = FIELD_HEIGHT / 2;
+      bulletx = 255;
+      bullety = 255;
+      bulletEnemyx = 255;
+      bulletEnemyy = 255;
+        
+      iazules [1] = 1; iazules [2] = 2; iazules [3] = 3; iazules [4] = 4; 
+      iazules [5] = 5; iazules [6] = 6; iazules [7] = 7; iazules [8] = 8;
+      ivioletas [1] = 1; ivioletas [2] = 2; ivioletas [3] = 3; ivioletas [4] = 4; 
+      ivioletas [5] = 5; ivioletas [6] = 6; ivioletas [7] = 7; ivioletas [8] = 8;
+      icelestes [1] = 1; icelestes [2] = 2; icelestes [3] = 3; icelestes [4] = 4; 
+      icelestes [5] = 5; icelestes [6] = 6; icelestes [7] = 7; icelestes [8] = 8;
+      iverdes [1] = 1; iverdes [2] = 2; iverdes [3] = 3; iverdes [4] = 4; 
+      iverdes [5] = 5; iverdes [6] = 6; iverdes [7] = 7; iverdes [8] = 8;
+      iamarillos [1] = 1; iamarillos [2] = 2; iamarillos [3] = 3; iamarillos [4] = 4; 
+      iamarillos [5] = 5; iamarillos [6] = 6; iamarillos [7] = 7; iamarillos [8] = 8;
+        
+      scoreSpace = 0;
+      lifesSpace = 3;
+    }
+        
+    void runSpaceInvader () {
+      spaceInit();
+        
+      unsigned long prevUpdateTime = 0;
+      boolean spaceRunning = true;
+        
+      while (spaceRunning) {
+        
+      if (scoreSpace == 40) {
+        Serial.print("e");
+        spaceRunning = false;
+        gameOverAnim(4);
+        break;
+      }
+        
+      setCirculation();
+        
+      /* Elegir de forma aleatoria la linea de invaders que va a disparar, el invader que va a disparar */
+      if (bulletEnemyx == 255 && bulletEnemyy == 255) {
+        byte binvaders = random(0, 5);
+        
+        byte bamarillos = random(1, 9);
+        byte bverdes = random(1, 9);
+        byte bcelestes = random(1, 9);
+        byte bvioletas = random(1, 9);
+        byte bazules = random(1, 9);
+        
+        for (byte i = 1; i < FIELD_WIDTH - 1; i++) {
+          if (binvaders == 0) {
+            if (iazules[bazules] != ivioletas[i] && iazules[bazules] != 255) {
+              bulletEnemyx = iazules[bazules];
+              bulletEnemyy = 1;
+              BALL_DIRENEMY = DIR_ENEMY;
+            } else {
+              binvaders = random (1, 5);
+            }
+          }
+          else if (binvaders == 1) {
+            if (ivioletas[bvioletas] != icelestes[i] && ivioletas[bvioletas] != 255) {
+              bulletEnemyx = ivioletas[bvioletas];
+              bulletEnemyy = 2;
+              BALL_DIRENEMY = DIR_ENEMY;
+            } else {
+              binvaders = random (2, 5);
+            }
+          }
+          else if (binvaders == 2) {
+            if (icelestes[bcelestes] != iverdes[i] && icelestes[bcelestes] != 255) {
+              bulletEnemyx = icelestes[bcelestes];
+              bulletEnemyy = 3;
+              BALL_DIRENEMY = DIR_ENEMY;
+            } else {
+              binvaders = random (3, 5);
+            }
+          }
+          else if (binvaders == 3) {
+            if (iverdes[bverdes] != iamarillos[i] && iverdes[bverdes] != 255) {
+              bulletEnemyx = iverdes[bverdes];
+              bulletEnemyy = 4;
+              BALL_DIRENEMY = DIR_ENEMY;
+            } else {
+              binvaders = 4;
+            }
+          }
+          else if (binvaders == 4) {
+            if (iamarillos[bamarillos] != iazules[i] && iamarillos[bamarillos] != 255) {
+              bulletEnemyx = iamarillos[bamarillos];
+              bulletEnemyy = 5;
+              BALL_DIRENEMY = DIR_ENEMY;
+            }
+          }
+        }
+      }
+        
+      /* Revisar colisiones de la bala enemiga con el jugador */
+      for (byte i = posPlayerSpace - 1; i <= posPlayerSpace + 1; i++) {
+        if (i == posPlayerSpace - 1) {
+          if (collide(bulletEnemyx, i, bulletEnemyy, 9)) {
+            bulletEnemyx = 255;
+            bulletEnemyy = 255;
+            --lifesSpace;
+          }
+        }
+        else if (i == posPlayerSpace) {
+          if (collide(bulletEnemyx, i, bulletEnemyy, 8)) {
+            bulletEnemyx = 255;
+            bulletEnemyy = 255;
+            --lifesSpace;
+          }
+        }
+        else if (i == posPlayerSpace + 1) {
+          if (collide(bulletEnemyx, i, bulletEnemyy, 9)) {
+            bulletEnemyx = 255;
+            bulletEnemyy = 255;
+            --lifesSpace;
+          }
+        }
+      }
+        
+      /* Revisar colision de la bala de jugador con los invaders */
+      for (byte i = 1; i < FIELD_WIDTH - 1; i++) {
+        if (collide(bulletx, iamarillos[i], bullety, 4)) {
+          iamarillos[i] = 255;
+          bulletx = 255;
+          bullety = 255;
+          ++scoreSpace;
+          Serial.print(scoreSpace);
+        }
+        else if (collide(bulletx, iverdes[i], bullety, 3)) {
+          iverdes[i] = 255;
+          bulletx = 255;
+          bullety = 255;
+          ++scoreSpace;
+          Serial.print(scoreSpace);
+        }
+        else if (collide(bulletx, icelestes[i], bullety, 2)) {
+          icelestes[i] = 255;
+          bulletx = 255;
+          bullety = 255;
+          ++scoreSpace;
+          Serial.print(scoreSpace);
+        }
+        else if (collide(bulletx, ivioletas[i], bullety, 1)) {
+          ivioletas[i] = 255;
+          bulletx = 255;
+          bullety = 255;
+          ++scoreSpace;
+          Serial.print(scoreSpace);
+        }
+        else if (collide(bulletx, iazules[i], bullety, 0)) {
+          iazules[i] = 255;
+          bulletx = 255;
+          bullety = 255;
+          ++scoreSpace;
+          Serial.print(scoreSpace);
+        }
+      }
+        
+      bulletDirectionPlayer();
+      bulletDirectionEnemy();
+        
+      /* Sistema de vidas */
+      if (lifesSpace == 0) {
+        spaceRunning = false;
+        Serial.print("e");
+        gameOverAnim(4);
+        break;
+      }
+        
+      clearTablePixels();
+        
+      /* Dibujar bala del jugador y bala enemiga */
+      setTablePixel(bulletx, bullety, 15, 15, 15);
+      setTablePixel(bulletEnemyx, bulletEnemyy, 15, 0, 0);
+        
+        
+      /* Dibujar invaders */
+      for (byte i = 1; i < FIELD_WIDTH - 1; i++) {
+        setTablePixel(iazules[i], 0, 0, 0, 15);
+        setTablePixel(ivioletas[i], 1, 15, 0, 15);
+        setTablePixel(icelestes[i], 2, 0, 7, 15);
+        setTablePixel(iverdes[i], 3, 7, 15, 0);
+        setTablePixel(iamarillos[i], 4, 15, 15, 0);
+      }
+        
+      /* Dibujar al jugador */
+      for (byte i = posPlayerSpace - 1; i <= posPlayerSpace + 1; i++) {
+        if (i == posPlayerSpace) {
+          setTablePixel(i, 9, 15, 15, 15);
+          setTablePixel(i, 8, 15, 15, 15);
+        } else {
+          setTablePixel(i, 9, 15, 15, 15);
+        }
+      }
+        
+      pixels.show();
+        
+      unsigned long curTime;
+      boolean dirChanged = false;
+      do {
+        readInput();
+        if (curControl == BTN_EXIT) {
+          spaceRunning = false;
+          gameOverAnim(4);
+          break;
+        }
+        if (curControl != BTN_NONE && !dirChanged) { //Solo se puede cambiar de dirección una vez
+          dirChanged = true;
+          setCirculation();
+          curControl = BTN_NONE;
+        }
+          curTime = millis();
+        }
+        while ((curTime - prevUpdateTime) < 250); //Luego de 250ms el juegador se mueve
+        prevUpdateTime = curTime;
+      }
+    }
+    </pre>
+          </div>
+          <div class="textcc">
+            <h4>Explicación:</h4>
+            <h5>Visible:</h5>
+            <p>Cuando desde el menú principal se presiona el botón "Space Invaders", comienza a ejecutarse esta parte
+              del código. El juego inicia con cinco filas de distintos colores cada una, que ocupan 8 pixeles de ancho,
+              una pequeña fila de 3 pixeles con 1 pixel encima, que representa una nave, la cual está ubicada en el
+              borde inferior del tablero. El objetivo del jugador es disparar proyectiles para destruir todas las filas
+              de colores sin ser destruido primero por los proyectiles enemigos , luego de ser golpeado por 3
+              proyectiles enemigos o haber destruido todas las filas de colores, el juego terminará.</p>
+            <h5>No visible:</h5>
+            <p>Este juego consulta constantemente al módulo bluetooth por entradas de datos para definir en qué
+              dirección debería moverse el jugador, o si se quiere salir del juego. Además con cada avance del juego se
+              pregunta si los proyectiles están colisionando con alguno de lo pixeles de las filas de colores, si algún
+              proyectil enemigo ha colisionado con el jugador, o si el jugador está colisionando con los bordes
+              izquierdo y derecho para que este no pueda salir del tablero.</p>
+          </div>
+        </section>
+        <section>
+          <h2>Dice</h2>
+          <div class="contenedorflex">
+            <div class="elproyecto">
+              <img src="gifs/5.gif" alt="" class="imgep">
+            </div>
+            <pre class="prettyprint linenums">
+    byte diceface = 0;
+
+    byte one[4]   = {44, 45, 54, 55};
+    byte two[8]   = {11, 12, 27, 28, 77, 78, 81, 82};
+    byte three[12] = {11, 12, 27, 28, 44, 45, 54, 55, 77, 78, 81, 82};
+    byte four[16]  = {11, 12, 17, 18, 21, 22, 27, 28, 71, 72, 77, 78, 81, 82, 87, 88};
+    byte five[20]  = {11, 12, 17, 18, 21, 22, 27, 28, 44, 45, 54, 55, 71, 72, 77, 78, 81, 82, 87, 88};
+    byte six[24]   = {11, 12, 17, 18, 21, 22, 27, 28, 41, 42, 47, 48, 51, 52, 57, 58, 71, 72, 77, 78, 81, 82, 87, 88};
+        
+        
+    void runDice() {
+      boolean diceRunning = true;
+      unsigned long prevUpdateTime = 0;
+        
+        
+      while (diceRunning) {
+        if (diceface == 1) {
+          for (byte i = 0; i < 4; i++) {
+            pixels.setPixelColor(one[i], pixels.Color(15, 15, 15));
+            diceface = 0;
+          }
+        }
+        else if (diceface == 2) {
+          for (byte i = 0; i < 8; i++) {
+            pixels.setPixelColor(two[i], pixels.Color(15, 15, 15));
+            diceface = 0;
+          }
+        }
+        else if (diceface == 3) {
+          for (byte i = 0; i < 12; i++) {
+            pixels.setPixelColor(three[i], pixels.Color(15, 15, 15));
+            diceface = 0;
+          }
+        }
+        else if (diceface == 4) {
+          for (byte i = 0; i < 16; i++) {
+            pixels.setPixelColor(four[i], pixels.Color(15, 15, 15));
+            diceface = 0;
+          }
+        }
+        else if (diceface == 5) {
+          for (byte i = 0; i < 20; i++) {
+            pixels.setPixelColor(five[i], pixels.Color(15, 15, 15));
+            diceface = 0;
+          }
+        }
+        else if (diceface == 6) {
+          for (byte i = 0; i < 24; i++) {
+            pixels.setPixelColor(six[i], pixels.Color(15, 15, 15));
+            diceface = 0;
+          }
+        }
+        
+        pixels.show();
+        delay(2500);
+        clearTablePixels();
+        
+        unsigned long curTime;
+        do {
+          readInput();
+          if (curControl == BTN_EXIT) {
+            diceRunning = false;
+            mainMenu();
+            break;
+          }
+          if (curControl != BTN_NONE) {
+            diceface = random(1, 7);
+            break;
+          }
+          curTime = millis();
+        }
+        while ((curTime - prevUpdateTime) < 250);
+        prevUpdateTime = curTime;
+        curControl = BTN_NONE;
+      }
+    }
+    </pre>
+          </div>
+          <div class="textcc">
+            <h4>Explicación:</h4>
+            <h5>Visible:</h5>
+            <p>Cuando desde el menú principal se presiona el botón "Dice", comienza a ejecutarse esta parte del código.
+              Esto a diferencia de las otras partes, no es un juego como tal, sino que es más una "herramienta". El
+              tablero se mantiene apagado hasta que el jugador presiona el botón con la imagen de un dado en la
+              aplicación, en este momento el tablero se ilumina representando alguno de los seis números de un dado "D6"
+            </p>
+            <h5>No visible:</h5>
+            <p>Esta herramienta consulta constantemente al módulo bluetooth por entradas de datos para definir en qué
+              momento se debe mostrar un número aleatorio en la pantalla.</p>
+          </div>
+        </section>
+        <section>
+          <h2>Game Over</h2>
+          <div class="contenedorflex">
+            <div class="elproyecto">
+              <img src="gifs/6.gif" alt="" class="imgep">
+            </div>
+            <pre class="prettyprint linenums">
+    byte x_zero[10] = {27, 31, 33, 46, 48, 51, 53, 66, 68, 72};
+    byte x_one[9] = {27, 32, 33, 47, 52, 67, 71, 72, 73};
+    byte x_two[9] = {26, 27, 31, 48, 52, 66, 71, 72, 73};
+    byte x_three[8] = {26, 27, 31, 47, 51, 68, 72, 73};
+    byte x_four[10] = {26, 31, 33, 46, 48, 51, 52, 53, 68, 71};
+    byte x_five[10] = {26, 27, 28, 33, 46, 47, 51, 68, 72, 73};
+    byte x_six[11] = {27, 28, 33, 46, 47, 51, 53, 66, 68, 71, 72};
+    byte x_seven[8] = {26, 27, 28, 31, 48, 52, 67, 72};
+    byte x_eight[9] = {27, 31, 33, 47, 51, 53, 66, 68, 72};
+    byte x_nine[11] = {26, 27, 31, 33, 46, 48, 51, 52, 68, 72, 73};
+
+    byte zero_x[10] = {22, 36, 38, 41, 43, 56, 58, 61, 63, 77};
+    byte one_x[9] = {22, 37, 38, 42, 57, 62, 76, 77, 78};
+    byte two_x[9] = {21, 22, 36, 43, 57, 61, 76, 77, 78};
+    byte three_x[8] = {21, 22, 36, 42, 56, 63, 77, 78};
+    byte four_x[10] = {21, 36, 38, 41, 43, 56, 57, 58, 63, 76};
+    byte five_x[10] = {21, 22, 23, 38, 41, 42, 56, 63, 77, 78};
+    byte six_x[11] = {22, 23, 38, 41, 42, 56, 58, 61, 63, 76, 77};
+    byte seven_x[8] = {21, 22, 23, 36, 43, 57, 62, 77};
+    byte eight_x[9] = {22, 36, 38, 42, 56, 58, 61, 63, 77};
+    byte nine_x[11] = {21, 22, 36, 38, 41, 43, 56, 57, 63, 77, 78};
+
+    void paintNumbers(byte number[], byte r, byte g, byte b) {
+      if (number == zero_x || number == x_zero) {
+        for (byte i = 0; i < 10; i++) {
+          pixels.setPixelColor(number[i], pixels.Color(r, g, b));
+        }
+      }
+      else if (number == one_x || number == x_one) {
+        for (byte i = 0; i < 9; i++) {
+          pixels.setPixelColor(number[i], pixels.Color(r, g, b));
+        }
+      }
+      else if (number == two_x || number == x_two) {
+        for (byte i = 0; i < 9; i++) {
+          pixels.setPixelColor(number[i], pixels.Color(r, g, b));
+        }
+      }
+      else if (number == three_x || number == x_three) {
+        for (byte i = 0; i < 8; i++) {
+          pixels.setPixelColor(number[i], pixels.Color(r, g, b));
+        }
+      }
+      else if (number == four_x || number == x_four) {
+        for (byte i = 0; i < 10; i++) {
+          pixels.setPixelColor(number[i], pixels.Color(r, g, b));
+        }
+      }
+      else if (number == five_x || number == x_five) {
+        for (byte i = 0; i < 10; i++) {
+          pixels.setPixelColor(number[i], pixels.Color(r, g, b));
+        }
+      }
+      else if (number == six_x || number == x_six) {
+        for (byte i = 0; i < 11; i++) {
+          pixels.setPixelColor(number[i], pixels.Color(r, g, b));
+        }
+      }
+      else if (number == seven_x || number == x_seven) {
+        for (byte i = 0; i < 8; i++) {
+          pixels.setPixelColor(number[i], pixels.Color(r, g, b));
+        }
+      }
+      else if (number == eight_x || number == x_eight) {
+        for (byte i = 0; i < 9; i++) {
+          pixels.setPixelColor(number[i], pixels.Color(r, g, b));
+        }
+      }
+      else if (number == nine_x || number == x_nine) {
+        for (byte i = 0; i < 11; i++) {
+          pixels.setPixelColor(number[i], pixels.Color(r, g, b));
+        }
+      }
+    }
+
+    void gameOverAnim(byte game) {
+      if (game == 1) {
+        unsigned long prevUpdateTime = 0;
+        for (byte i = 0; i < 4; i++) {
+          setTablePixel (ax, ay, 15, 0, 0);
+          for (byte i = 0; i < curLength; i++) {
+            setTablePixel(xs[i], ys[i], 0, 15, 0);
+          }
+          pixels.show();
+          clearTablePixels();
+          delay(500);
+          pixels.show();
+          delay(500);
+        }
+        genericGameOverAnim();
+        genericScoreAnim(scoreSnake, 0, 15, 0);
+        pixels.show();
+        delay(2500);
+        mainMenu();
+      }
+      else if (game == 2) {
+        unsigned long prevUpdateTime = 0;
+        for (byte i = 0; i < 4; i++) {
+          setTablePixel(ballx, bally, 15, 15, 15);
+          for (byte i = posPlayerIzq - 1; i <= posPlayerIzq + 1; i++) {
+            setTablePixel(0, i, 0, 0, 15);
+          }
+          for (byte  i = posPlayerDer - 1; i <= posPlayerDer + 1; i++) {
+            setTablePixel((FIELD_WIDTH - 1), i, 15, 0, 0);
+          }
+          pixels.show();
+          clearTablePixels();
+          delay(500);
+          pixels.show();
+          delay(500);
+        }
+        genericGameOverAnim();
+        pongScoreAnim();
+        pixels.show();
+        delay(2500);
+        mainMenu();
+      }
+      else if (game == 3) {
+        for (byte i = 0; i < 4; i++) {
+          setTablePixel(ballbx, ballby, 15, 15, 15);
+          for (byte i = 0; i < FIELD_WIDTH; i++) {
+            setTablePixel(lrojos[i], 0, 15, 0, 0);
+            setTablePixel(lnaranjas[i], 1, 15, 7, 0);
+            setTablePixel(lamarillos[i], 2, 15, 15, 0);
+            setTablePixel(lverdes[i], 3, 7, 15, 0);
+            setTablePixel(lazules[i], 4, 0, 7, 15);
+          }
+          for (byte i = posPlayer - 1; i <= posPlayer + 1; i++) {
+            setTablePixel(i, 9, 15, 15, 15);
+          }
+          pixels.show();
+          clearTablePixels();
+          delay(500);
+          pixels.show();
+          delay(500);
+        }
+        genericGameOverAnim();
+        genericScoreAnim(scoreBreakout, 15, 15, 15);
+        pixels.show();
+        delay(2500);
+        mainMenu();
+      }
+      else if (game == 4) {
+        for (byte i = 0; i < 4; i++) {
+          for (byte i = 1; i < FIELD_WIDTH - 1; i++) {
+            setTablePixel(iazules[i], 0, 0, 0, 15);
+            setTablePixel(ivioletas[i], 1, 15, 0, 15);
+            setTablePixel(icelestes[i], 2, 0, 7, 15);
+            setTablePixel(iverdes[i], 3, 7, 15, 0);
+            setTablePixel(iamarillos[i], 4, 15, 15, 0);
+          }
+          for (byte i = posPlayerSpace - 1; i <= posPlayerSpace + 1; i++) {
+            if (i == posPlayerSpace) {
+              setTablePixel(i, 9, 15, 15, 15);
+              setTablePixel(i, 8, 15, 15, 15);
+            } else {
+              setTablePixel(i, 9, 15, 15, 15);
+            }
+          }
+          pixels.show();
+          clearTablePixels();
+          delay(500);
+          pixels.show();
+          delay(500);
+        }
+        genericGameOverAnim();
+        genericScoreAnim(scoreSpace, 15, 15, 15);
+        pixels.show();
+        delay(2500);
+        mainMenu();
+      }
+    }
+
+
+    void nextFrame() {
+      pixels.show();
+      clearTablePixels();
+      delay(200);
+    }
+
+    void genericScoreAnim(byte score, byte r, byte g, byte b) {
+      switch (score) {
+        case 0:
+          paintNumbers(zero_x, r, g, b);
+          paintNumbers(x_zero, r, g, b);
+          break;
+        case 1:
+          paintNumbers(zero_x, r, g, b);
+          paintNumbers(x_one, r, g, b);
+          break;
+        case 2:
+          paintNumbers(zero_x, r, g, b);
+          paintNumbers(x_two, r, g, b);
+          break;
+        case 3:
+          paintNumbers(zero_x, r, g, b);
+          paintNumbers(x_three, r, g, b);
+          break;
+        case 4:
+          paintNumbers(zero_x, r, g, b);
+          paintNumbers(x_four, r, g, b);
+          break;
+        case 5:
+          paintNumbers(zero_x, r, g, b);
+          paintNumbers(x_five, r, g, b);
+          break;
+        case 6:
+          paintNumbers(zero_x, r, g, b);
+          paintNumbers(x_six, r, g, b);
+          break;
+        case 7:
+          paintNumbers(zero_x, r, g, b);
+          paintNumbers(x_seven, r, g, b);
+          break;
+        case 8:
+          paintNumbers(zero_x, r, g, b);
+          paintNumbers(x_eight, r, g, b);
+          break;
+        case 9:
+          paintNumbers(zero_x, r, g, b);
+          paintNumbers(x_nine, r, g, b);
+          break;
+        case 10:
+          paintNumbers(one_x, r, g, b);
+          paintNumbers(x_zero, r, g, b);
+          break;
+        case 11:
+          paintNumbers(one_x, r, g, b);
+          paintNumbers(x_one, r, g, b);
+          break;
+        case 12:
+          paintNumbers(one_x, r, g, b);
+          paintNumbers(x_two, r, g, b);
+          break;
+        case 13:
+          paintNumbers(one_x, r, g, b);
+          paintNumbers(x_three, r, g, b);
+          break;
+        case 14:
+          paintNumbers(one_x, r, g, b);
+          paintNumbers(x_four, r, g, b);
+          break;
+        case 15:
+          paintNumbers(one_x, r, g, b);
+          paintNumbers(x_five, r, g, b);
+          break;
+        case 16:
+          paintNumbers(one_x, r, g, b);
+          paintNumbers(x_six, r, g, b);
+          break;
+        case 17:
+          paintNumbers(one_x, r, g, b);
+          paintNumbers(x_seven, r, g, b);
+          break;
+        case 18:
+          paintNumbers(one_x, r, g, b);
+          paintNumbers(x_eight, r, g, b);
+          break;
+        case 19:
+          paintNumbers(one_x, r, g, b);
+          paintNumbers(x_nine, r, g, b);
+          break;
+        case 20:
+          paintNumbers(two_x, r, g, b);
+          paintNumbers(x_zero, r, g, b);
+          break;
+        case 21:
+          paintNumbers(two_x, r, g, b);
+          paintNumbers(x_one, r, g, b);
+          break;
+        case 22:
+          paintNumbers(two_x, r, g, b);
+          paintNumbers(x_two, r, g, b);
+          break;
+        case 23:
+          paintNumbers(two_x, r, g, b);
+          paintNumbers(x_three, r, g, b);
+          break;
+        case 24:
+          paintNumbers(two_x, r, g, b);
+          paintNumbers(x_four, r, g, b);
+          break;
+        case 25:
+          paintNumbers(two_x, r, g, b);
+          paintNumbers(x_five, r, g, b);
+          break;
+        case 26:
+          paintNumbers(two_x, r, g, b);
+          paintNumbers(x_six, r, g, b);
+          break;
+        case 27:
+          paintNumbers(two_x, r, g, b);
+          paintNumbers(x_seven, r, g, b);
+          break;
+        case 28:
+          paintNumbers(two_x, r, g, b);
+          paintNumbers(x_eight, r, g, b);
+          break;
+        case 29:
+          paintNumbers(two_x, r, g, b);
+          paintNumbers(x_nine, r, g, b);
+          break;
+        case 30:
+          paintNumbers(three_x, r, g, b);
+          paintNumbers(x_zero, r, g, b);
+          break;
+        case 31:
+          paintNumbers(three_x, r, g, b);
+          paintNumbers(x_one, r, g, b);
+          break;
+        case 32:
+          paintNumbers(three_x, r, g, b);
+          paintNumbers(x_two, r, g, b);
+          break;
+        case 33:
+          paintNumbers(three_x, r, g, b);
+          paintNumbers(x_three, r, g, b);
+          break;
+        case 34:
+          paintNumbers(three_x, r, g, b);
+          paintNumbers(x_four, r, g, b);
+          break;
+        case 35:
+          paintNumbers(three_x, r, g, b);
+          paintNumbers(x_five, r, g, b);
+          break;
+        case 36:
+          paintNumbers(three_x, r, g, b);
+          paintNumbers(x_six, r, g, b);
+          break;
+        case 37:
+          paintNumbers(three_x, r, g, b);
+          paintNumbers(x_seven, r, g, b);
+          break;
+        case 38:
+          paintNumbers(three_x, r, g, b);
+          paintNumbers(x_eight, r, g, b);
+          break;
+        case 39:
+          paintNumbers(three_x, r, g, b);
+          paintNumbers(x_nine, r, g, b);
+          break;
+        case 40:
+          paintNumbers(four_x, r, g, b);
+          paintNumbers(x_zero, r, g, b);
+          break;
+        case 41:
+          paintNumbers(four_x, r, g, b);
+          paintNumbers(x_one, r, g, b);
+          break;
+        case 42:
+          paintNumbers(four_x, r, g, b);
+          paintNumbers(x_two, r, g, b);
+          break;
+        case 43:
+          paintNumbers(four_x, r, g, b);
+          paintNumbers(x_three, r, g, b);
+          break;
+        case 44:
+          paintNumbers(four_x, r, g, b);
+          paintNumbers(x_four, r, g, b);
+          break;
+        case 45:
+          paintNumbers(four_x, r, g, b);
+          paintNumbers(x_five, r, g, b);
+          break;
+        case 46:
+          paintNumbers(four_x, r, g, b);
+          paintNumbers(x_six, r, g, b);
+          break;
+        case 47:
+          paintNumbers(four_x, r, g, b);
+          paintNumbers(x_seven, r, g, b);
+          break;
+        case 48:
+          paintNumbers(four_x, r, g, b);
+          paintNumbers(x_eight, r, g, b);
+          break;
+        case 49:
+          paintNumbers(four_x, r, g, b);
+          paintNumbers(x_nine, r, g, b);
+          break;
+        case 50:
+          paintNumbers(five_x, r, g, b);
+          paintNumbers(x_zero, r, g, b);
+          break;
+        case 51:
+          paintNumbers(five_x, r, g, b);
+          paintNumbers(x_one, r, g, b);
+          break;
+        case 52:
+          paintNumbers(five_x, r, g, b);
+          paintNumbers(x_two, r, g, b);
+          break;
+        case 53:
+          paintNumbers(five_x, r, g, b);
+          paintNumbers(x_three, r, g, b);
+          break;
+        case 54:
+          paintNumbers(five_x, r, g, b);
+          paintNumbers(x_four, r, g, b);
+          break;
+        case 55:
+          paintNumbers(five_x, r, g, b);
+          paintNumbers(x_five, r, g, b);
+          break;
+        case 56:
+          paintNumbers(five_x, r, g, b);
+          paintNumbers(x_six, r, g, b);
+          break;
+        case 57:
+          paintNumbers(five_x, r, g, b);
+          paintNumbers(x_seven, r, g, b);
+          break;
+        case 58:
+          paintNumbers(five_x, r, g, b);
+          paintNumbers(x_eight, r, g, b);
+          break;
+        case 59:
+          paintNumbers(five_x, r, g, b);
+          paintNumbers(x_nine, r, g, b);
+          break;
+        case 60:
+          paintNumbers(six_x, r, g, b);
+          paintNumbers(x_zero, r, g, b);
+          break;
+        case 61:
+          paintNumbers(six_x, r, g, b);
+          paintNumbers(x_one, r, g, b);
+          break;
+        case 62:
+          paintNumbers(six_x, r, g, b);
+          paintNumbers(x_two, r, g, b);
+          break;
+        case 63:
+          paintNumbers(six_x, r, g, b);
+          paintNumbers(x_three, r, g, b);
+          break;
+        case 64:
+          paintNumbers(six_x, r, g, b);
+          paintNumbers(x_four, r, g, b);
+          break;
+        case 65:
+          paintNumbers(six_x, r, g, b);
+          paintNumbers(x_five, r, g, b);
+          break;
+        case 66:
+          paintNumbers(six_x, r, g, b);
+          paintNumbers(x_six, r, g, b);
+          break;
+        case 67:
+          paintNumbers(six_x, r, g, b);
+          paintNumbers(x_seven, r, g, b);
+          break;
+        case 68:
+          paintNumbers(six_x, r, g, b);
+          paintNumbers(x_eight, r, g, b);
+          break;
+        case 69:
+          paintNumbers(six_x, r, g, b);
+          paintNumbers(x_nine, r, g, b);
+          break;
+        case 70:
+          paintNumbers(seven_x, r, g, b);
+          paintNumbers(x_zero, r, g, b);
+          break;
+        case 71:
+          paintNumbers(seven_x, r, g, b);
+          paintNumbers(x_one, r, g, b);
+          break;
+        case 72:
+          paintNumbers(seven_x, r, g, b);
+          paintNumbers(x_two, r, g, b);
+          break;
+        case 73:
+          paintNumbers(seven_x, r, g, b);
+          paintNumbers(x_three, r, g, b);
+          break;
+        case 74:
+          paintNumbers(seven_x, r, g, b);
+          paintNumbers(x_four, r, g, b);
+          break;
+        case 75:
+          paintNumbers(seven_x, r, g, b);
+          paintNumbers(x_five, r, g, b);
+          break;
+        case 76:
+          paintNumbers(seven_x, r, g, b);
+          paintNumbers(x_six, r, g, b);
+          break;
+        case 77:
+          paintNumbers(seven_x, r, g, b);
+          paintNumbers(x_seven, r, g, b);
+          break;
+        case 78:
+          paintNumbers(seven_x, r, g, b);
+          paintNumbers(x_eight, r, g, b);
+          break;
+        case 79:
+          paintNumbers(seven_x, r, g, b);
+          paintNumbers(x_nine, r, g, b);
+          break;
+        case 80:
+          paintNumbers(eight_x, r, g, b);
+          paintNumbers(x_zero, r, g, b);
+          break;
+        case 81:
+          paintNumbers(eight_x, r, g, b);
+          paintNumbers(x_one, r, g, b);
+          break;
+        case 82:
+          paintNumbers(eight_x, r, g, b);
+          paintNumbers(x_two, r, g, b);
+          break;
+        case 83:
+          paintNumbers(eight_x, r, g, b);
+          paintNumbers(x_three, r, g, b);
+          break;
+        case 84:
+          paintNumbers(eight_x, r, g, b);
+          paintNumbers(x_four, r, g, b);
+          break;
+        case 85:
+          paintNumbers(eight_x, r, g, b);
+          paintNumbers(x_five, r, g, b);
+          break;
+        case 86:
+          paintNumbers(eight_x, r, g, b);
+          paintNumbers(x_six, r, g, b);
+          break;
+        case 87:
+          paintNumbers(eight_x, r, g, b);
+          paintNumbers(x_seven, r, g, b);
+          break;
+        case 88:
+          paintNumbers(eight_x, r, g, b);
+          paintNumbers(x_eight, r, g, b);
+          break;
+        case 89:
+          paintNumbers(eight_x, r, g, b);
+          paintNumbers(x_nine, r, g, b);
+          break;
+        case 90:
+          paintNumbers(nine_x, r, g, b);
+          paintNumbers(x_zero, r, g, b);
+          break;
+        case 91:
+          paintNumbers(nine_x, r, g, b);
+          paintNumbers(x_one, r, g, b);
+          break;
+        case 92:
+          paintNumbers(nine_x, r, g, b);
+          paintNumbers(x_two, r, g, b);
+          break;
+        case 93:
+          paintNumbers(nine_x, r, g, b);
+          paintNumbers(x_three, r, g, b);
+          break;
+        case 94:
+          paintNumbers(nine_x, r, g, b);
+          paintNumbers(x_four, r, g, b);
+          break;
+        case 95:
+          paintNumbers(nine_x, r, g, b);
+          paintNumbers(x_five, r, g, b);
+          break;
+        case 96:
+          paintNumbers(nine_x, r, g, b);
+          paintNumbers(x_six, r, g, b);
+          break;
+        case 97:
+          paintNumbers(nine_x, r, g, b);
+          paintNumbers(x_seven, r, g, b);
+          break;
+        case 98:
+          paintNumbers(nine_x, r, g, b);
+          paintNumbers(x_eight, r, g, b);
+          break;
+        case 99:
+          paintNumbers(nine_x, r, g, b);
+          paintNumbers(x_nine, r, g, b);
+          break;
+        }
+    }
+
+    void pongScoreAnim() {
+      if (scoreIzq == 0) {
+        pixels.setPixelColor(22, pixels.Color(0, 0, 15));
+        pixels.setPixelColor(36, pixels.Color(0, 0, 15));
+        pixels.setPixelColor(38, pixels.Color(0, 0, 15));
+        pixels.setPixelColor(41, pixels.Color(0, 0, 15));
+        pixels.setPixelColor(43, pixels.Color(0, 0, 15));
+        pixels.setPixelColor(56, pixels.Color(0, 0, 15));
+        pixels.setPixelColor(58, pixels.Color(0, 0, 15));
+        pixels.setPixelColor(61, pixels.Color(0, 0, 15));
+        pixels.setPixelColor(63, pixels.Color(0, 0, 15));
+        pixels.setPixelColor(77, pixels.Color(0, 0, 15));
+      }
+      else if (scoreIzq == 1) {
+        pixels.setPixelColor(22, pixels.Color(0, 0, 15));
+        pixels.setPixelColor(37, pixels.Color(0, 0, 15));
+        pixels.setPixelColor(38, pixels.Color(0, 0, 15));
+        pixels.setPixelColor(42, pixels.Color(0, 0, 15));
+        pixels.setPixelColor(57, pixels.Color(0, 0, 15));
+        pixels.setPixelColor(62, pixels.Color(0, 0, 15));
+        pixels.setPixelColor(76, pixels.Color(0, 0, 15));
+        pixels.setPixelColor(77, pixels.Color(0, 0, 15));
+        pixels.setPixelColor(78, pixels.Color(0, 0, 15));
+      }
+      else if (scoreIzq == 2) {
+        pixels.setPixelColor(21, pixels.Color(0, 0, 15));
+        pixels.setPixelColor(22, pixels.Color(0, 0, 15));
+        pixels.setPixelColor(36, pixels.Color(0, 0, 15));
+        pixels.setPixelColor(43, pixels.Color(0, 0, 15));
+        pixels.setPixelColor(57, pixels.Color(0, 0, 15));
+        pixels.setPixelColor(61, pixels.Color(0, 0, 15));
+        pixels.setPixelColor(76, pixels.Color(0, 0, 15));
+        pixels.setPixelColor(77, pixels.Color(0, 0, 15));
+        pixels.setPixelColor(78, pixels.Color(0, 0, 15));
+      }
+      else if (scoreIzq == 3) {
+        pixels.setPixelColor(21, pixels.Color(0, 0, 15));
+        pixels.setPixelColor(22, pixels.Color(0, 0, 15));
+        pixels.setPixelColor(36, pixels.Color(0, 0, 15));
+        pixels.setPixelColor(42, pixels.Color(0, 0, 15));
+        pixels.setPixelColor(56, pixels.Color(0, 0, 15));
+        pixels.setPixelColor(63, pixels.Color(0, 0, 15));
+        pixels.setPixelColor(77, pixels.Color(0, 0, 15));
+        pixels.setPixelColor(78, pixels.Color(0, 0, 15));
+      }
+      else if (scoreIzq == 4) {
+        pixels.setPixelColor(21, pixels.Color(0, 0, 15));
+        pixels.setPixelColor(36, pixels.Color(0, 0, 15));
+        pixels.setPixelColor(38, pixels.Color(0, 0, 15));
+        pixels.setPixelColor(41, pixels.Color(0, 0, 15));
+        pixels.setPixelColor(43, pixels.Color(0, 0, 15));
+        pixels.setPixelColor(56, pixels.Color(0, 0, 15));
+        pixels.setPixelColor(57, pixels.Color(0, 0, 15));
+        pixels.setPixelColor(58, pixels.Color(0, 0, 15));
+        pixels.setPixelColor(63, pixels.Color(0, 0, 15));
+        pixels.setPixelColor(76, pixels.Color(0, 0, 15));
+      }
+      else if (scoreIzq == 5) {
+        pixels.setPixelColor(21, pixels.Color(0, 0, 15));
+        pixels.setPixelColor(22, pixels.Color(0, 0, 15));
+        pixels.setPixelColor(23, pixels.Color(0, 0, 15));
+        pixels.setPixelColor(38, pixels.Color(0, 0, 15));
+        pixels.setPixelColor(41, pixels.Color(0, 0, 15));
+        pixels.setPixelColor(42, pixels.Color(0, 0, 15));
+        pixels.setPixelColor(56, pixels.Color(0, 0, 15));
+        pixels.setPixelColor(63, pixels.Color(0, 0, 15));
+        pixels.setPixelColor(77, pixels.Color(0, 0, 15));
+        pixels.setPixelColor(78, pixels.Color(0, 0, 15));
+      }
+
+      if (scoreDer == 0) {
+        pixels.setPixelColor(27, pixels.Color(15, 0, 0));
+        pixels.setPixelColor(31, pixels.Color(15, 0, 0));
+        pixels.setPixelColor(33, pixels.Color(15, 0, 0));
+        pixels.setPixelColor(46, pixels.Color(15, 0, 0));
+        pixels.setPixelColor(48, pixels.Color(15, 0, 0));
+        pixels.setPixelColor(51, pixels.Color(15, 0, 0));
+        pixels.setPixelColor(53, pixels.Color(15, 0, 0));
+        pixels.setPixelColor(66, pixels.Color(15, 0, 0));
+        pixels.setPixelColor(68, pixels.Color(15, 0, 0));
+        pixels.setPixelColor(72, pixels.Color(15, 0, 0));
+      }
+      else if (scoreDer == 1) {
+        pixels.setPixelColor(27, pixels.Color(15, 0, 0));
+        pixels.setPixelColor(32, pixels.Color(15, 0, 0));
+        pixels.setPixelColor(33, pixels.Color(15, 0, 0));
+        pixels.setPixelColor(47, pixels.Color(15, 0, 0));
+        pixels.setPixelColor(52, pixels.Color(15, 0, 0));
+        pixels.setPixelColor(67, pixels.Color(15, 0, 0));
+        pixels.setPixelColor(71, pixels.Color(15, 0, 0));
+        pixels.setPixelColor(72, pixels.Color(15, 0, 0));
+        pixels.setPixelColor(73, pixels.Color(15, 0, 0));
+      }
+      else if (scoreDer == 2) {
+        pixels.setPixelColor(26, pixels.Color(15, 0, 0));
+        pixels.setPixelColor(27, pixels.Color(15, 0, 0));
+        pixels.setPixelColor(31, pixels.Color(15, 0, 0));
+        pixels.setPixelColor(48, pixels.Color(15, 0, 0));
+        pixels.setPixelColor(52, pixels.Color(15, 0, 0));
+        pixels.setPixelColor(66, pixels.Color(15, 0, 0));
+        pixels.setPixelColor(71, pixels.Color(15, 0, 0));
+        pixels.setPixelColor(72, pixels.Color(15, 0, 0));
+        pixels.setPixelColor(73, pixels.Color(15, 0, 0));
+      }
+      else if (scoreDer == 3) {
+        pixels.setPixelColor(26, pixels.Color(15, 0, 0));
+        pixels.setPixelColor(27, pixels.Color(15, 0, 0));
+        pixels.setPixelColor(31, pixels.Color(15, 0, 0));
+        pixels.setPixelColor(47, pixels.Color(15, 0, 0));
+        pixels.setPixelColor(51, pixels.Color(15, 0, 0));
+        pixels.setPixelColor(68, pixels.Color(15, 0, 0));
+        pixels.setPixelColor(72, pixels.Color(15, 0, 0));
+        pixels.setPixelColor(73, pixels.Color(15, 0, 0));
+      }
+      else if (scoreDer == 4) {
+        pixels.setPixelColor(26, pixels.Color(15, 0, 0));
+        pixels.setPixelColor(31, pixels.Color(15, 0, 0));
+        pixels.setPixelColor(33, pixels.Color(15, 0, 0));
+        pixels.setPixelColor(46, pixels.Color(15, 0, 0));
+        pixels.setPixelColor(48, pixels.Color(15, 0, 0));
+        pixels.setPixelColor(51, pixels.Color(15, 0, 0));
+        pixels.setPixelColor(52, pixels.Color(15, 0, 0));
+        pixels.setPixelColor(53, pixels.Color(15, 0, 0));
+        pixels.setPixelColor(68, pixels.Color(15, 0, 0));
+        pixels.setPixelColor(71, pixels.Color(15, 0, 0));
+      }
+      else if (scoreDer == 5) {
+        pixels.setPixelColor(26, pixels.Color(15, 0, 0));
+        pixels.setPixelColor(27, pixels.Color(15, 0, 0));
+        pixels.setPixelColor(28, pixels.Color(15, 0, 0));
+        pixels.setPixelColor(33, pixels.Color(15, 0, 0));
+        pixels.setPixelColor(46, pixels.Color(15, 0, 0));
+        pixels.setPixelColor(47, pixels.Color(15, 0, 0));
+        pixels.setPixelColor(51, pixels.Color(15, 0, 0));
+        pixels.setPixelColor(68, pixels.Color(15, 0, 0));
+        pixels.setPixelColor(72, pixels.Color(15, 0, 0));
+        pixels.setPixelColor(73, pixels.Color(15, 0, 0));
+      }
+    }
+
+    void genericGameOverAnim() {
+      /*Frame 1*/
+      pixels.setPixelColor(30, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(49, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(50, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(69, pixels.Color(15, 15, 15));
+      nextFrame();
+
+      /*Frame 3*/
+      pixels.setPixelColor(28, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(29, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(32, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(47, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(50, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(52, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(67, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(70, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(71, pixels.Color(15, 15, 15));
+      nextFrame();
+
+      /*Frame 5*/
+      pixels.setPixelColor(26, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(27, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(28, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(30, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(34, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(45, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(50, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(51, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(52, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(54, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(65, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(69, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(71, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(72, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(73, pixels.Color(15, 15, 15));
+      nextFrame();
+
+      /*Frame 7*/
+      pixels.setPixelColor(24, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(25, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(26, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(32, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(36, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(43, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(49, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(50, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(52, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(53, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(54, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(56, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(63, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(67, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(69, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(70, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(73, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(74, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(75, pixels.Color(15, 15, 15));
+      nextFrame();
+
+      /*Frame 9*/
+      pixels.setPixelColor(22, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(23, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(24, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(29, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(31, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(34, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(38, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(41, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(47, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(50, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(51, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(52, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(54, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(55, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(56, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(58, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(61, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(65, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(67, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(72, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(75, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(76, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(77, pixels.Color(15, 15, 15));
+      nextFrame();
+
+      /*Frame 11*/
+      pixels.setPixelColor(20, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(21, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(22, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(27, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(28, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(29, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(30, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(33, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(36, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(45, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(49, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(50, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(51, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(52, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(53, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(54, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(56, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(57, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(58, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(63, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(65, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(69, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(70, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(74, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(77, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(78, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(79, pixels.Color(15, 15, 15));
+      nextFrame();
+
+      /*Frame 13*/
+      pixels.setPixelColor(20, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(25, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(26, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(27, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(29, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(30, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(32, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(35, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(38, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(43, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(47, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(49, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(50, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(52, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(53, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(54, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(55, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(56, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(58, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(59, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(61, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(63, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(67, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(69, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(70, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(72, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(76, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(79, pixels.Color(15, 15, 15));
+      nextFrame();
+
+      /*Frame 15*/
+      pixels.setPixelColor(23, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(24, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(25, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(27, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(31, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(32, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(34, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(37, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(41, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(45, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(47, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(49, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(52, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(54, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(55, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(56, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(57, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(58, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(61, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(65, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(67, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(72, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(74, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(78, pixels.Color(15, 15, 15));
+      nextFrame();
+
+      /*Frame 17*/
+      pixels.setPixelColor(21, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(22, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(23, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(25, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(29, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(30, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(31, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(33, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(34, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(36, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(39, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(43, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(45, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(47, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(49, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(50, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(54, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(56, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(57, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(58, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(59, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(63, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(65, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(69, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(70, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(74, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(76, pixels.Color(15, 15, 15));
+      nextFrame();
+
+      /*Frame 19*/
+      pixels.setPixelColor(20, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(21, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(23, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(27, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(29, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(30, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(32, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(33, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(35, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(36, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(38, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(41, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(43, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(45, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(47, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(49, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(50, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(52, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(56, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(58, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(59, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(61, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(63, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(67, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(69, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(70, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(72, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(76, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(78, pixels.Color(15, 15, 15));
+      nextFrame();
+
+      /*Frame 21*/
+      pixels.setPixelColor(21, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(25, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(27, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(28, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(29, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(32, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(34, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(35, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(37, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(38, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(41, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(43, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(45, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(47, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(48, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(49, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(52, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(54, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(58, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(61, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(65, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(67, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(70, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(71, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(72, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(74, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(78, pixels.Color(15, 15, 15));
+      nextFrame();
+
+      /*Frame 23*/
+      pixels.setPixelColor(23, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(25, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(26, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(27, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(28, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(34, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(36, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(37, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(39, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(41, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(43, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(45, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(46, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(47, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(54, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(56, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(63, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(65, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(71, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(72, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(73, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(74, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(76, pixels.Color(15, 15, 15));
+      nextFrame();
+
+      /*Frame 25*/
+      pixels.setPixelColor(21, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(23, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(24, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(25, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(26, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(36, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(38, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(39, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(41, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(43, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(44, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(45, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(58, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(56, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(61, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(63, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(73, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(74, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(75, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(76, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(78, pixels.Color(15, 15, 15));
+      nextFrame();
+
+      /*Frame 27*/
+      pixels.setPixelColor(21, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(22, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(23, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(24, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(30, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(38, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(41, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(42, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(43, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(49, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(50, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(58, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(61, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(69, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(75, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(76, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(77, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(78, pixels.Color(15, 15, 15));
+      nextFrame();
+
+      /*Frame 29*/
+      pixels.setPixelColor(20, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(21, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(22, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(28, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(29, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(32, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(40, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(41, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(47, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(52, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(67, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(70, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(71, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(77, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(78, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(79, pixels.Color(15, 15, 15));
+      nextFrame();
+
+      /*Frame 31*/
+      pixels.setPixelColor(20, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(26, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(27, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(28, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(30, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(34, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(45, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(49, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(50, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(54, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(65, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(69, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(71, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(72, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(73, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(79, pixels.Color(15, 15, 15));
+      nextFrame();
+
+      /*Frame 33*/
+      pixels.setPixelColor(24, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(25, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(26, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(29, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(30, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(32, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(36, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(43, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(47, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(49, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(52, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(56, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(63, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(67, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(73, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(74, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(75, pixels.Color(15, 15, 15));
+      pixels.show();
+      delay(200);
+      clearTablePixels();
+
+      /*Frame 35*/
+      pixels.setPixelColor(22, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(23, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(24, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(27, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(32, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(34, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(38, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(41, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(45, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(47, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(51, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(54, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(58, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(61, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(65, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(68, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(70, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(75, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(76, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(77, pixels.Color(15, 15, 15));
+      pixels.show();
+      delay(200);
+      clearTablePixels();
+
+      /*Frame 37*/
+      pixels.setPixelColor(20, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(21, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(22, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(25, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(29, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(30, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(34, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(36, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(43, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(45, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(49, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(51, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(53, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(56, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(63, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(66, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(68, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(72, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(77, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(78, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(79, pixels.Color(15, 15, 15));
+      nextFrame();
+
+      /*Frame 39*/
+      pixels.setPixelColor(20, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(23, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(27, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(29, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(30, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(32, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(36, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(38, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(41, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(43, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(47, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(49, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(50, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(53, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(55, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(58, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(61, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(64, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(66, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(69, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(70, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(74, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(79, pixels.Color(15, 15, 15));
+      nextFrame();
+
+     /*Frame 41*/
+      pixels.setPixelColor(21, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(25, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(27, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(28, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(29, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(32, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(34, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(38, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(41, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(45, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(47, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(48, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(49, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(52, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(55, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(57, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(62, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(64, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(67, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(70, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(71, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(72, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(76, pixels.Color(15, 15, 15));
+     nextFrame();
+
+     /*Frame 43*/
+      pixels.setPixelColor(23, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(25, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(26, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(27, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(28, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(34, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(36, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(43, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(45, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(46, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(47, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(54, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(57, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(59, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(60, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(62, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(65, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(71, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(72, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(73, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(74, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(78, pixels.Color(15, 15, 15));
+      nextFrame();
+
+      /*Frame 45*/
+      pixels.setPixelColor(21, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(23, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(24, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(25, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(26, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(28, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(29, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(31, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(36, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(38, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(41, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(43, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(44, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(45, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(48, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(50, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(51, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(56, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(59, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(60, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(63, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(68, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(71, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(73, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(74, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(75, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(76, pixels.Color(15, 15, 15));
+      nextFrame();
+
+      /*Frame 47*/
+      pixels.setPixelColor(21, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(22, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(23, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(24, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(26, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(27, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(28, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(29, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(33, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(38, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(41, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(42, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(43, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(46, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(50, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(51, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(52, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(53, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(58, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(61, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(66, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(73, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(75, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(76, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(77, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(78, pixels.Color(15, 15, 15));
+      nextFrame();
+
+      /*Frame 49*/
+      pixels.setPixelColor(20, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(21, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(22, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(24, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(25, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(26, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(27, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(31, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(35, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(40, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(41, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(44, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(48, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(52, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(53, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(54, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(55, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(64, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(68, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(71, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(75, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(77, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(78, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(79, pixels.Color(15, 15, 15));
+      nextFrame();
+
+      /*Frame 51*/
+      pixels.setPixelColor(20, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(22, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(23, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(24, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(25, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(33, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(37, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(42, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(46, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(54, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(55, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(56, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(57, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(62, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(66, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(73, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(77, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(79, pixels.Color(15, 15, 15));
+      nextFrame();
+
+      /*Frame 53*/
+      pixels.setPixelColor(20, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(21, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(22, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(23, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(35, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(39, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(40, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(44, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(56, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(57, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(58, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(59, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(60, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(64, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(75, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(79, pixels.Color(15, 15, 15));
+      nextFrame();
+
+      /*Frame 55*/
+      pixels.setPixelColor(20, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(21, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(37, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(42, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(58, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(59, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(62, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(77, pixels.Color(15, 15, 15));
+      nextFrame();
+
+      /*Frame 57*/
+      pixels.setPixelColor(39, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(40, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(60, pixels.Color(15, 15, 15));
+      pixels.setPixelColor(79, pixels.Color(15, 15, 15));
+      nextFrame();
+
+      pixels.show();
+    }
+    </pre>
+          </div>
+          <div class="textcc">
+            <h4>Explicación:</h4>
+            <h5>Visible:</h5>
+            <p>Cuando el jugador termina un juego ya sea ganando, perdiendo o abandonando a mitad de la partida,
+              comienza a ejecutarse esta parte del código. Al iniciarse esta parte del código, se verán parpadear los
+              elementos en pantalla, para luego apagarse e iniciar una animación en la que la palabra "GAME OVER", pasa
+              por la pantalla para indicar la finalización del juego. Luego, dependiendo del juego del que se haya
+              salido, se mostrará en pantalla la puntuación que el jugador ha obtenido durante el juego. Luego de unos
+              segundos se volverá al "Menú principal".</p>
+            <h5>No visible:</h5>
+            <p>Uno podría creer que la palabra "GAME OVER" está conformada por 8 caracteres que pasan a través de la
+              pantalla, cuando realmente la animación está realizada cuadro por cuadro. Los números que muestran la
+              puntuación al final de la animación del "GAME OVER", están definidos en listas al inicio del código,
+              haciendo que el número de la izquierda y el número de la derecha sean independientes uno de otro.</p>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <!-- Descargas de archivos y página adicionales -->
+  <h1 id="parte4"> <u> Descargas </u> </h1> <br>
+  <div class="conbtn">
+    <div class="conbtn2">
+      <a target="_blank" href="https://mega.nz/file/xeo3RYSL#xmrEQSmpbTLSa92fKopmSp-QEhhEdNR_Iricw2VSPjs"
+        download="Presentación Completa - PDF.pdf" class="adsbtn">
+        <img src="img/DW_ICON_PDF.png" alt="Arduino Logo" class="adsimg my-auto">
+        <p>Presentación Completa - PDF</p>
+      </a>
+    </div>
+    <div class="conbtn2">
+      <a target="_blank" href="https://mega.nz/file/MTp3WI4B#Wg5e1xSVTMA8MaoDvQBWYzxAbSdYMirR3E1iD6rUuus"
+        download="Última Versión - Código Arduino.rar" class="adsbtn">
+        <img src="img/DW_ICON_ARDUINO.png" alt="Arduino Logo" class="adsimg my-auto">
+        <p>Última Versión - Código Arduino</p>
+      </a>
+    </div>
+    <div class="conbtn2">
+      <a target="_blank" href="https://mega.nz/file/xK4BQSKB#k2CqKTvC-PujDb63Q4XLW6D4ikaNlsCMM_MrSH88C1Y"
+        download="Última Versión - Circuito.fz" class="adsbtn">
+        <img src="img/DW_ICON_FZ.png" alt="Arduino Logo" class="adsimg">
+        <p>Última Versión - Circuito Arduino</p>
+      </a>
+    </div>
+    <div class="conbtn2">
+      <a target="_blank" href="https://mega.nz/file/8PoHyKwD#T-xTu2i7v982LqxX2uwYcxCMMLcxEAT_lC7RHpG0mXE"
+        download="Última Versión - PCB Wizard.pcb" class="adsbtn">
+        <img src="img/DW_ICON_PCB.png" alt="Arduino Logo" class="adsimg">
+        <p>Última Versión - PCB Wizard</p>
+      </a>
+    </div>
+    <div class="conbtn2">
+      <a target="_blank" href="https://mega.nz/file/1GgF1KhZ#DyS5NN5LGAMBp44SPw7y536S84M-j8Se3kvBuXh38X4"
+        download="Última Versión - Aplicación Bluetooth.apk" class="adsbtn">
+        <img src="img/DW_ICON_APK.png" alt="Arduino Logo" class="adsimg">
+        <p>Última Versión - Aplicación Bluetooth</p>
+      </a>
+    </div>
+  </div>
+  <br>
+  <h1 class="blue"><u> Adicionales </u></h1> <br>
+  <div class="conbtn">
+    <div class="conbtn2">
+      <a target="_blank" href="https://github.com/LED-Pixel-Table/LED-Pixel-Table" class="adsbtn2">
+        <img src="img/DW_ICON_GH.png" alt="Arduino Logo" class="adsimg">
+        <p>Versionado Completo - Código Arduino</p>
+      </a>
+    </div>
+    <div class="conbtn2">
+      <a target="_blank" href="https://mega.nz/file/NG5xxYbL#H82K9qrunradz-Kwm-_llPpkCxK7IqfXp3WyIvWvYW0"
+        class="adsbtn2">
+        <img src="img/DW_ICON_CAD.png" alt="Arduino Logo" class="adsimg">
+        <p>Maquetado 3D - AutoCAD</p>
+      </a>
+    </div>
+    <div class="conbtn2">
+      <a target="_blank" href="https://mega.nz/file/wWgzWIqS#UsCY46A11fw2IfuDzQAow7elVw3vtow0ebPcvsZ-pIo"
+        class="adsbtn2">
+        <img src="img/DW_ICON_AIA.png" alt="Arduino Logo" class="adsimg">
+        <p>Última Versión - MIT App Inventor 2</p>
+      </a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <br>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-m">
+        <div>
+          <p class="text-light"><u><b>Contacto: </b></u><br>
+            ledpixeltable@gmail.com
+          </p>
+        </div>
+        <div class="icon-m">
+          <a target="_blank" href="https://www.facebook.com/led.pixeltable"><img src="img/ICON_FB.png"
+              alt="Arduino Logo" class="icon"></a>
+          <a target="_blank" href="https://www.instagram.com/ledpixeltable/?hl=es-la"><img src="img/ICON_IG.png"
+              alt="Arduino Logo" class="icon"></a>
+          <a target="_blank" href="https://twitter.com/TableLed"><img src="img/ICON_TW.png" alt="Arduino Logo"
+              class="icon"></a>
+          <a target="_blank" href="https://github.com/LED-Pixel-Table/LED-Pixel-Table"><img src="img/ICON_GH.png"
+              alt="Arduino Logo" class="icon icon-gh-m"></a>
+          <a target="_blank" href="https://www.youtube.com/channel/UC2nMPduMtFDhIGlXMSXtk1Q"><img src="img/ICON_YT.png"
+              alt="Arduino Logo" class="icon icon-yt-m"></a>
+        </div>
+      </div>
+      ©LED Pixel Table 2020
+    </div>
+  </footer>
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/39ab01d5b0.js" crossorigin="anonymous"></script>
+  <!-- CDN Prettify -->
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+  <!-- CDN Jquery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <!-- CDN Bootstrap -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <!-- Implementar el archivo .js -->
+  <script src="Jquery.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>

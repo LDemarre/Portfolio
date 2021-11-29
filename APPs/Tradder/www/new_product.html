@@ -1,0 +1,172 @@
+<!-- We don't need a full layout in this file because this page will be parsed with Ajax.  -->
+<div class="page" data-name="new_product">
+    <div class="page-content">
+        <!-- Top Navbar -->
+        <nav class="navbarB">
+            <div class="mobile-nav">
+                <div class="container">
+                    <a class="tNavbar">Tradder</a>
+
+                    <div class="action" id="myAcc">
+                        <div class="profile" id="profile" onclick="menuToggle();">
+                            <img src="img/user.png">
+                        </div>
+                        <div class="menu-acc">
+                            <ul>
+                                <h3></h3>
+                                <a href="/nProduct/">
+                                    <li><img src="img/donation.png">Donar</li>
+                                </a>
+                                <a href="/profile/">
+                                    <li><img src="img/editing.png">Editar Perfil</li>
+                                </a>
+                                <a href="/ownerChats/">
+                                    <li><img src="img/chat.png">Mis chats</li>
+                                </a>
+                                <a id="signOut">
+                                    <li><img src="img/logout.png">Desconectar</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-mobile">
+                    <a href="/login/" id="login">Ingreso</a>
+                    <a href="/register/" id="signUp">Registro</a>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="navbarA">
+            <div class="container">
+                <a class="tNavbar">Tradder</a>
+                <div class="menu">
+                    <a href="/login/" id="login">Ingreso</a>
+                    <a href="/register/" id="signUp">Registro</a>
+                    <a href="/nProduct/" id="donar">Donar</a>
+                    <div class="action" id="myAcc">
+                        <div class="profile" id="profile" onclick="menuToggle();">
+                            <img src="img/user.png">
+                        </div>
+                        <div class="menu-acc">
+                            <ul>
+                                <h3></h3>
+                                <a href="/profile/">
+                                    <li><img src="img/editing.png">Editar Perfil</li>
+                                </a>
+                                <a href="/ownerChats/">
+                                    <li><img src="img/chat.png">Mis chats</li>
+                                </a>
+                                <a id="signOut">
+                                    <li><img src="img/logout.png">Desconectar</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="form">
+            <div class="form_body">
+                <form class="rForm" method="post">
+                    <h1 class="rTitle">Publicar producto</h1>
+                    <div class="group" id="gName">
+                        <input autocomplete="off" type="text" name="pName" id="nName" required><span
+                            class="barra"></span>
+                        <label>Nombre del producto</label>
+                        <i class="form-val-status fa-regular fa-circle-xmark" id="iName"></i>
+                        <p class="form-input-error" id="form-error-Name-product">El usuario tiene que ser de 4 a 6
+                            dígitos y
+                            sólo
+                            puede contener numeros,
+                            letras y guión bajo.</p>
+                    </div>
+                    <div class="group" id="pPhoto">
+                        <div class="container-photo">
+                            <div class="wrapper">
+                                <div class="image">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="content-photo">
+                                    <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                                    <div class="text">No se eligió una imagen aún!</div>
+                                    <div class="progress-area">
+                                    </div>
+                                </div>
+                                <div id="cancel-btn"><i class="fas fa-times"></i></div>
+                                <div class="file-name">Nombre de la imagen aquí</div>
+                            </div>
+                            <input autocomplete="off" type="file" id="default-btn" name="Photo" required>
+                            <button class="button_form no-ripple" id="custom-btn" onclick="defaultBtnActive()"
+                                form="">Elegir una imagen</button>
+                        </div>
+                    </div>
+                    <div class="group" id="pCategory">
+                        <div class="container-category">
+                            <h2>Categoría</h2>
+
+                            <div class="select-box">
+                                <div class="options-container">
+                                    <div class="option">
+                                        <label for="metal">Metal</label>
+                                    </div>
+                                    <div class="option">
+                                        <label for="glass">Vidrio</label>
+                                    </div>
+                                    <div class="option">
+                                        <label for="cardboard">Cartón</label>
+                                    </div>
+                                    <div class="option">
+                                        <label for="wood">Madera</label>
+                                    </div>
+                                    <div class="option">
+                                        <label for="reusable">Reutilizable</label>
+                                    </div>
+                                    <div class="option">
+                                        <label for="biodegradable">Biodegradable</label>
+                                    </div>
+                                </div>
+
+                                <div class="selected">
+                                    Seleccionar Categoría
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group" id="pDescription">
+                        <textarea autocomplete="off" name="Description" id="nDescription" rows="10" cols="50"
+                            required></textarea>
+                        <span class="barra"></span>
+                        <label>Descripción</label>
+                    </div>
+
+                    <button id="new_pButton" class="button_form no-ripple">Publicar</button>
+
+                    <div class="group" id="form-message-error">
+                        <i class="fa-solid fa-triangle-exclamation"></i> <b>Error:</b>
+                        <span> Rellena el formulario correctamente.</span>
+                    </div>
+                    <div class="group" id="form-message-exito">
+                        <span> Formulario rellenado correctamente.</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <img src="img/logo_tradder.png" class="logo">
+            <div class="social-icons-container">
+                <a target="blank" class="link external" href="https://www.instagram.com/tradder_ar/">
+                    <img src="img/ICON_IG.png" class="social-icon">
+                </a>
+                <a target="blank" class="link external" href="https://twitter.com/Tradder_ar">
+                    <img src="img/ICON_TW.png" class="social-icon">
+                </a>
+                <a target="blank" class="link external" href="https://www.youtube.com/channel/UCdHJldwAnnBluGanbE1CQzw">
+                    <img src="img/ICON_YT.png" class="social-icon">
+                </a>
+            </div>
+            <span class="copyright">&copy;2021, Tradder. All rights reserved.</span>
+        </footer>
+    </div>

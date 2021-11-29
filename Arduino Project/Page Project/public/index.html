@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LED Pixel Table</title>
+  <!-- Estilos bootstrap .css -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!-- Estilos .css -->
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="icon" href="img/LOGO_LIGHT.png">
+</head>
+
+<body>
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container">
+      <a href="index.html" class="navbar-brand"><img src="img/LOGO_LIGHT.png" alt="LPT Logo"
+          style="width:40px;height:33px"> LED Pixel Table</a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#Nav"><span
+          class="fas fa-angle-down"></span></button>
+      <div class="collapse navbar-collapse" id="Nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="Sobre_nosotros.html">Sobre Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="El_Proyecto.html">Acerca del Proyecto</a></li>
+          <li class="nav-item"><a class="nav-link" href="La_Institución.html">La Institución</a></li>
+          <li class="nav-item"><a class="nav-link" href="Contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Migas de pan -->
+  <ul class="breadcrumb mb-0">
+    <li class="breadcrumb-item active">Inicio</li>
+  </ul>
+
+  <!-- Slider -->
+  <div class="conslider">
+    <div class="c-slider">
+      <div class="slider">
+        <section>
+          <a href="El_Proyecto.html#fase"><img src="img/Fase1.jpeg" alt=""></a>
+        </section>
+        <section>
+          <a href="El_Proyecto.html#fase2"><img src="img/Fase2.jpeg" alt=""></a>
+        </section>
+        <section>
+          <a href="El_Proyecto.html#fase3"><img src="img/Fase3.jpeg" alt=""></a>
+        </section>
+        <section>
+          <a href="El_Proyecto.html#fase4"><img src="img/Fase4.jpeg" alt=""></a>
+        </section>
+      </div>
+      <div class="btn-prev">&#60;</div>
+      <div class="btn-next">&#62;</div>
+    </div>
+  </div>
+
+  <!-- Texto principal -->
+  <hr class="textp">
+  <h1 class="textp" id="presentacion">PRESENTACIÓN</h1>
+  <hr class="textp">
+
+  <!-- Video -->
+  <div class="convid">
+    <iframe width="1000" height="500" src="https://www.youtube.com/embed/-byineN6Wts" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+  </div>
+  <br>
+
+  <!-- Características de los materiales -->
+
+  <h1 class="texts">Materiales principales: </h1>
+  <hr class="textp">
+  <div class="contenedorflex">
+    <div class="caracimg scroll1">
+      <a href="#carac1"><img src="img/ws2812b.png" alt=""></a>
+    </div>
+    <p class="caractext scroll1"> LEDs Direccionales WS2812B</p>
+    <div class="caracimga scroll2">
+      <a href="#carac2"><img src="img/HC05.jpg" alt=""></a>
+    </div>
+    <p class="caractexta scroll2"> Módulo bluetooth HC-05</p>
+    <div class="caracimgb scroll2">
+      <a href="#carac2b"><img src="img/HC05.jpg" alt=""></a>
+    </div>
+    <p class="caractextb scroll2"> Módulo bluetooth HC-05</p>
+    <div class="caracimg scroll3">
+      <a href="#carac3"><img src="img/vidrio.png" alt=""></a>
+    </div>
+    <p class="caractext scroll3"> Lámina de vidrio opaco </p>
+    <div class="caracimga scroll4">
+      <a href="#carac4"><img src="img/arduino-nano.png" alt=""></a>
+    </div>
+    <p class="caractexta scroll4"> Arduino NANO </p>
+    <div class="caracimgb scroll4">
+      <a href="#carac4b"><img src="img/arduino-nano.png" alt=""></a>
+    </div>
+    <p class="caractextb scroll4"> Arduino NANO </p>
+  </div>
+  <br>
+
+  <!-- Explicación de las características -->
+  <div class="concarac">
+    <div class="concaracizq">
+      <div class="conimgizq">
+        <img src="img/ws2812b.png" title="LEDs WS2812B">
+      </div>
+      <div class="textoder" id="carac1">
+        <p><span class="subrayado">LEDs Direccionales WS2812B:</span> La tira de LEDs direccionales posee cierta
+          inteligencia que mediante algunas
+          líneas de código nos permite encender los LEDs que deseemos con distintos colores e intensidades, dándonos
+          mucha libertad a la hora de mostrar los juegos en el tablero.</p>
+      </div>
+    </div>
+    <div class="concaracder">
+      <div class="textoizq" id="carac2">
+        <p><span class="subrayado">Módulo Bluetooth HC-05:</span> Este nos permite establecer una comunicación entre la
+          aplicación y el tablero,
+          pudiendo usarlo de manera inalámbrica a través de un dispositivo móvil.</p>
+      </div>
+      <div class="conimgder">
+        <img src="img/HC05.jpg" alt="">
+      </div>
+    </div>
+    <div class="concarac2">
+      <div class="conimgizq">
+        <img src="img/HC05.jpg" alt="">
+      </div>
+      <div class="textoizq" id="carac2b">
+        <p><span class="subrayado">Módulo Bluetooth HC-05:</span> Este nos permite establecer una comunicación entre la
+          aplicación y el tablero,
+          pudiendo usarlo de manera inalámbrica a través de un dispositivo móvil.</p>
+      </div>
+    </div>
+    <div class="concaracizq">
+      <div class="conimgizq">
+        <img src="img/vidrio.png" alt="">
+      </div>
+      <div class="textoder" id="carac3">
+        <p><span class="subrayado">Lámina de vidrio opaco:</span> La lámina de vidrio es utilizada para difuminar el
+          contenido de las celdas del
+          tablero y así visualizar mejor las luces de los leds, además de que este es un vidrio antireflejo, lo que hace
+          al tablero cómodo de ver incluso en espacios con luces.</p>
+      </div>
+    </div>
+    <div class="concaracder">
+      <div class="textoizq" id="carac4">
+        <p><span class="subrayado">Arduino NANO:</span> Esta es una placa pequeña basada en el microcontrolador
+          ATmega328, y es utilizada en este proyecto para ejecutar el código y hacer funcionar correctamente a los
+          distintos componentes del tablero.</p>
+      </div>
+      <div class="conimgder">
+        <img src="img/arduino-nano.png" alt="">
+      </div>
+    </div>
+    <div class="concarac2">
+      <div class="conimgizq">
+        <img src="img/arduino-nano.png" alt="">
+      </div>
+      <div class="textoizq" id="carac4b">
+        <p><span class="subrayado">Arduino NANO:</span> Esta es una placa pequeña basada en el microcontrolador
+          ATmega328, y es utilizada en este
+          proyecto para ejecutar el código y hacer funcionar correctamente a los distintos componentes del tablero.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <br>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-m">
+        <div>
+          <p class="text-light"><u><b>Contacto: </b></u><br>
+            ledpixeltable@gmail.com
+          </p>
+        </div>
+        <div class="icon-m">
+          <a target="_blank" href="https://www.facebook.com/led.pixeltable"><img src="img/ICON_FB.png"
+              alt="Arduino Logo" class="icon"></a>
+          <a target="_blank" href="https://www.instagram.com/ledpixeltable/?hl=es-la"><img src="img/ICON_IG.png"
+              alt="Arduino Logo" class="icon"></a>
+          <a target="_blank" href="https://twitter.com/TableLed"><img src="img/ICON_TW.png" alt="Arduino Logo"
+              class="icon"></a>
+          <a target="_blank" href="https://github.com/LED-Pixel-Table/LED-Pixel-Table"><img src="img/ICON_GH.png"
+              alt="Arduino Logo" class="icon icon-gh-m"></a>
+          <a target="_blank" href="https://www.youtube.com/channel/UC2nMPduMtFDhIGlXMSXtk1Q"><img src="img/ICON_YT.png"
+              alt="Arduino Logo" class="icon icon-yt-m"></a>
+        </div>
+      </div>
+      ©LED Pixel Table 2020
+    </div>
+  </footer>
+
+  <!-- Scroll Reveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/39ab01d5b0.js" crossorigin="anonymous"></script>
+  <!-- CDN Jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"
+    integrity="sha512-ju6u+4bPX50JQmgU97YOGAXmRMrD9as4LE05PdC3qycsGQmjGlfm041azyB1VfCXpkpt1i9gqXCT6XuxhBJtKg=="
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  <!-- CDN Bootstrap -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <!-- Implementar el archivo .js -->
+  <script src="Jquery.js"></script>
+  <script src="ScrollReveal.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
